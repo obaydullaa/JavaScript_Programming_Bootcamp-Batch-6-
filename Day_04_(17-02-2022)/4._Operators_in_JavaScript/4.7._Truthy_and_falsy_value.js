@@ -5,12 +5,21 @@ Logical Operators
 AND(&&), OR(||), and NOT(!)
  */
 
-console.log((10 > 5 && 10 < 10)); //  flase
-console.log((10 > 5 || 10 < 10)); //  true
-console.log((10 > 5 && 10 !== 10)); //  flase
+// check trythy value 
+console.log(Boolean(''));
 
-console.log(true && true); // true
-console.log(true && false); // false
-console.log(false && true); // false
-console.log(false || true); // true
-console.log(true || false); // false
+console.log((10 > 5 && 10 < 10)); //  false
+console.log((10 > 5 || 10 < 10)); //  true
+console.log((10 > 5 && 10 !== 10)); //  false
+
+console.log(true && true);           // true
+console.log(true && false);          // false
+console.log(false && true);          // false
+console.log(false || true);          // true
+console.log(true || false);          // true
+
+console.log(!!'');
+console.log(!!0);
+console.log(!!null);
+console.log(!!undefined);
+console.log(!!false);

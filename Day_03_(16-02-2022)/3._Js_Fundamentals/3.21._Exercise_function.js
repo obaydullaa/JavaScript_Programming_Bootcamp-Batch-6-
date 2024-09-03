@@ -180,7 +180,6 @@ const movieData = [
 
 let allMovie = '';
 function allmovieDatafunc (movieData) {
-
     for(let i = 0; i < movieData.length; i++) {
       let moviId = movieData[i].id;
       let moviName = movieData[i].name;
@@ -192,5 +191,4 @@ function allmovieDatafunc (movieData) {
     return allMovie;
 }
  
-
 console.log(allmovieDatafunc(movieData));

@@ -18,11 +18,5 @@
 
  */
 
-const x = 10;
-console.log(x > 5);
-console.log(x > 5);
-console.log(x > 5);
-console.log(x > 5);
-console.log(x > 5);
-console.log(x > 5);
-console.log(x > 5);
+const x = 15;
+console.log(x > 5); // false

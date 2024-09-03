@@ -1,5 +1,5 @@
 /**
- * Operator are like function in different look hving operands in each side.
+ * Operator are like function in different look having operands in each side.
  */
 
 // 1 + 2 ;

@@ -7,6 +7,6 @@ console.log(5 == '5'); // true
 console.log(5 === '5'); // false
 
 /**
-    == : Just Value Compair.
-    === : Value and Data type compair.
+    == : Just Value Compar.
+    === : Value and Data type compar.
  */
