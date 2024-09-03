@@ -1,0 +1,3 @@
+/**
+ * Just Install Quokka.js
+ */

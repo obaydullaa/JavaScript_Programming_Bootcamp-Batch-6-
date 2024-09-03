@@ -117,7 +117,48 @@ console.log(moviZeroOutput)
 
 // Soulutios 01
 
-const movieData = [{
+// const movieData = [{
+//         id: 1,
+//         name: 'Movi 01',
+//         rating: 5,
+//         category: 'Bangla',
+//     },
+//     {
+//         id: 2,
+//         name: 'Tere Meri',
+//         rating: 10,
+//         category: 'Hindi',
+//     },
+//     {
+//         id: 3,
+//         name: 'Movi 03',
+//         rating: 8,
+//         category: 'English',
+//     }
+// ]
+
+// let allMovi = '';
+
+// function moviFunc(movies) {
+
+//     for (let i = 0; i < movies.length; i++) {
+//         const moviId = movies[i].id;
+//         const moviName = movies[i].name;
+//         const moviRating = movies[i].rating;
+//         const moviCategory = movies[i].category;
+
+//         allMovi += `Movi Id is ${moviId} And Movi name is ${moviName} This Movi Rating ${moviRating} & category ${moviCategory}.\n`;
+//     }
+
+//     return allMovi;
+// }
+
+
+// console.log(moviFunc(movieData));
+
+
+const movieData = [
+    {
         id: 1,
         name: 'Movi 01',
         rating: 5,
@@ -137,21 +178,19 @@ const movieData = [{
     }
 ]
 
-let allMovi = '';
+let allMovie = '';
+function allmovieDatafunc (movieData) {
 
-function moviFunc(movies) {
+    for(let i = 0; i < movieData.length; i++) {
+      let moviId = movieData[i].id;
+      let moviName = movieData[i].name;
+      let moviRating = movieData[i].rating;
+      let moviCat = movieData[i].category;
 
-    for (let i = 0; i < movies.length; i++) {
-        const moviId = movies[i].id;
-        const moviName = movies[i].name;
-        const moviRating = movies[i].rating;
-        const moviCategory = movies[i].category;
-
-        allMovi += `Movi Id is ${moviId} And Movi name is ${moviName} This Movi Rating ${moviRating} & category ${moviCategory}.\n`;
+       allMovie += `Movi Id ${moviId} Movi name ${moviName} Movi Rating ${moviRating} Movi Category name ${moviCat}, \n`;
     }
-
-    return allMovi;
+    return allMovie;
 }
+ 
 
-
-console.log(moviFunc(movieData));
+console.log(allmovieDatafunc(movieData));
