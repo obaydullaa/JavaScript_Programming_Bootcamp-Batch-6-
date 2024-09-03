@@ -124,7 +124,7 @@ const movieData = [{
         category: 'Bangla',
     },
     {
-        id: 5,
+        id: 2,
         name: 'Tere Meri',
         rating: 10,
         category: 'Hindi',
