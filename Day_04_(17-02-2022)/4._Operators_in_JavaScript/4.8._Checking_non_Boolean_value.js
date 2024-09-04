@@ -24,14 +24,14 @@ console.log(!!undefined);
 
 let y = 10;
 // Logical AND (&&) returns true when every part is true otherwise false
-// ekta part false asei porer condition check korbe na tai total result false asbe
+// ekta part false asei porer condition check korbe na tai total result false asbe && ar khetre all true hote hobe
 console.log(y > 8 && y !== 15); // true 
 console.log(y > 12 && y !== 15); // false // short circuit 
 
 // Logical OR (||) returns true when any part is true otherwise false
-// ja kono ekta part true asle total result is true asbe 
+// ja kono ekta part true asle total result is true asbe || ar khetre false pale porer condition check korbe.
 console.log(y > 12 || y !== 10); // false 
-console.log(y > 12 || y !== 15); // false // short circuit 
+console.log(y > 8 || y !== 15); // true // short circuit 
 
 
 

@@ -1,0 +1,59 @@
+# Exercise - 1 (What will be the result and explain why?) -3
+const x = 10;
+const y = "a"
+y === "b" || x >= 10
+
+# Exercise - 2 (What will be the result and explain why?)-3
+
+const x = 3;
+const y = 8;
+
+!(x == "3" || x === y) && !(y != 8 && x <= y)
+
+# Exercise - 3(Check the value ans show output whether it's truthy or falsy ).What are the truthy and falsy value in Javascript -3
+
+"Hello World" //true
+
+"" //false
+
+null //false
+
+0 //false
+
+-1 //true
+
+NaN //false
+
+# Exercise - 4 (What will be the result and explain why?) Explain short circuit -4
+
+const str = "haha!"
+const msg = ""
+const isFunny = "false"
+
+!(( str || msg ) || isFunny)
+
+# Exercise-5: when to use == vs === ? //1
+
+# Exercise-6: operands++ vs ++operands //2
+
+const a = 10
+a++
+++a
+what are the differences between a++ and ++a
+
+# Exercise-7: What will be the result? and explain why? //2
+
+10 / 2 * 5 
+what to do if I want to get the result of 1 after calculation?
+
+
+# Exercise-8: 
+Write down what the following statements will return. Try to figure this out before putting the commands in the chrome console //2
+
+2 == "2"
+2 === 2
+10 % 3
+10 % 3 === 1
+true && false
+false || true
+true || false
