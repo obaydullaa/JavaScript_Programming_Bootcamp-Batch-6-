@@ -1,7 +1,4 @@
-/**
- * 7.1.Object review
- */
-// Object => key: value OR Property: value
+// Dynamically aces properties
 
 const product = {
     name: 'Print T-shirt',
@@ -9,9 +6,6 @@ const product = {
     'is available': true,
 
 }
-
-// Dynamically aces properties
-
 
 console.log(product.name); // Print T-shirt
 console.log(product['name']); // Print T-shirt
@@ -21,13 +15,14 @@ const availAble = 'is available';
 console.log(product[availAble]); // true
 
 const profile = {
-    fistName: 'obaydul',
+    'fist Name': 'obaydul', // invalid property
     lastName: 'Islam',
     email: 'obaydul@gmail.com',
     // fullName: function() {  // Old js
     //     return profile.fistName + ' ' + profile.lastName;
     // },
-    fullName() { // Modal js
+    // Modal js
+    fullName() { 
         return this.fistName + ' ' + this.lastName;
     }
 }
@@ -35,3 +30,8 @@ const profile = {
 console.log(profile.fistName);
 console.log(profile.lastName);
 console.log(profile.fullName());
+
+// Dynamically access properties and invalid properties
+const myVar = 'email';
+// console.log(profile[myVar]);
+console.log(profile['fist Name']); // obaydul // access invalid properties
