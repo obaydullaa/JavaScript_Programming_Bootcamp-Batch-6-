@@ -3,22 +3,6 @@
  */
 
 
-
-const profile = {
-    fistName: 'obaydul',
-    lastName: 'Islam',
-    email: 'obaydul@gmail.com',
-    // fullName: function() {  // Old js
-    //     return profile.fistName + ' ' + profile.lastName;
-    // },
-    fullName() { // Modal js
-        console.log(this)
-        return this.fistName + ' ' + this.lastName;
-    }
-}
-
-console.log(profile.fistName);
-
 // it's call factory function 
 function printProfile(firstName, lastName, email) {
     return {
