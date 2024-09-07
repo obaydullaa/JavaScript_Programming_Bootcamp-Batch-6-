@@ -5,20 +5,33 @@
 // Pass by value
 let a = 10;
 
-function passByValue(a) {
-    a = true;
+function passByValue(inputNum) {
+   let b = inputNum;
+   console.log(b)
+    b = 20
+    return b;
 }
-passByValue(a)
 
-console.log(a);
+
+
+
+console.log(passByValue(a)); // 20 
+// 20
+console.log(a); // 10
 
 
 // Pass by reference
-let obj = { value: 10 };
+let aObj = { 
+    age: 10
+ };
 
-function passByReference(passedobj) {
-    passedobj.value = 20;
+function passByReference(inputObj) {
+    let bObj = inputObj;
+    console.log(bObj);
+    bObj.age = 20;
+    return bObj;
 }
-passByReference(obj)
 
-console.log(obj);
+console.log(passByReference(aObj))
+
+console.log(aObj); //{ age: 20 }
