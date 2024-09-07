@@ -3,7 +3,7 @@
  */
 
 // Copy by value (primitive)
-// Copy by Reference  (Rererence/ complex)
+// Copy by Reference  (Reference / complex)
 
 let a = 10;
 let b = a;
@@ -15,7 +15,7 @@ a = 20;
 console.log(a);
 console.log(b);
 
-
+// copy by reference
 let obj1 = { value: 3 };
 let obj2 = obj1;
 
