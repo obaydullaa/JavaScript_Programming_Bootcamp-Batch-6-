@@ -33,5 +33,11 @@ console.log(profile.fullName());
 
 // Dynamically access properties and invalid properties
 const myVar = 'email';
-// console.log(profile[myVar]);
+console.log(profile[myVar]);
+console.log(profile.myVar);
 console.log(profile['fist Name']); // obaydul // access invalid properties
+
+for(let aa in profile) {
+    console.log(aa); 
+    console.log(profile[aa]); 
+}

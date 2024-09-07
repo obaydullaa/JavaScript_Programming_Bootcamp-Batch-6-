@@ -6,7 +6,7 @@ const product = {
     name: 'Print T-shirt',
     price: 10,
     'is available': true,
-    productDes() {
+    productDes() {  // This is method 
         return `${this.name}-$${this.price}`;
     }
 }
