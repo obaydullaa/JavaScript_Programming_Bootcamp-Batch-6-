@@ -1,5 +1,5 @@
 /**
- * 8.3_Rest operators
+ * 2.Loop inside function
  */
 // ... Rest Operator
 function product(name, ...property) {
