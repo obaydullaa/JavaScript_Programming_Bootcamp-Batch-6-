@@ -14,7 +14,7 @@
 //     console.log('Hi');
 // }
 
-//** Calback funtion (Kono ekta funtions ke onno ekta function ke return kore & kono ekta func ke jodi paramete hisane received call back function bole )
+//** Callback function (Kono ekta funtions ke onno ekta function ke return kore & kono ekta func ke jodi parameter hisane received call back function bole )
 
 //Higher Order Function
 

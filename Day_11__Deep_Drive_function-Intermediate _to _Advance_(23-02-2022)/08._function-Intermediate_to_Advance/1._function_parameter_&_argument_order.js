@@ -1,5 +1,5 @@
 /**
- * 1.Understansing function parameter and argument orders
+ * 1.Understanding function parameter and argument orders
  */
 
 function greet(greetMsg = 'Hello', name = 'Obaydulla') { // parameter
