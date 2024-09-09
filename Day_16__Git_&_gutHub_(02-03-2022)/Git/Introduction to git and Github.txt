@@ -1,0 +1,93 @@
+Version(software development project) Control System-VCS(A Developer's Friend)
+============================================
+Save a project(Taking snapshot) on a specific point(Adding Feature and save a version)
+  -Adding new feature 
+  -Modify extsing feature 
+
+* A Life Lesson - 6 hours
+  - 2 hours(simpler version)
+  - 2 hours(3D version)
+  - 2 hours (old version)
+
+
+- Remote VCS server (GitHUB)
+
+
+
+
+Software Development workflow
+===============================
+Facebook (Demo)
+  -status management(branch)
+      - image upload (version)
+      - Link Management (version)
+      - React System (version)
+      - comment management
+      - notification management
+  - personal Profile management
+  - Group management
+  - page Management
+
+** Working with GIT(Local version management)
+  - Install git(git-scm.com)
+  - configure git 
+      -git config --global user.name 'name' 
+      -git config --global user.email 'email' 
+
+Working Dir         Staging area             commit(saved a version)
+============      ===============           ====================
+index.htm         git add fileName           git commit -m  '' 'Message'    
+main.js           git add . (Add all)                 git commit -am **
+
+
+** Github is remote version of local Git feature management
+
+
+*Some Important command
+  - git init 
+  - git status (see files in staging area)
+  - git log  --oneline (show Log with commit and message)
+  - git show commit_version
+  - git reset ( remove from staging area )
+  - git reset --hard (All modified & modification & code remove)
+  - git checkout version
+  - git branch 
+  - git checkout branchName
+
+ * Let's go live using github pages
+  - git clone(github)
+  - git push -u origin branchName(github)
+  - git pull (git fetch + git merge)
+  - git merge (branch Name) 
+ * Gitignore (Hide your Secret by ignoring files ) 
+ 
+
+**Centra VCS or Distributed VCS vs Local VCS
+
+central VCS (central place)
+Distributed VCS(github)
+- whole version dealt locally
+local VCS
+
+
+
+//skipping staging area(directly save a version) -tracked and modified
+
+git commit -am 'message'
+
+- staged/unstaged change(git diff)
+git diff - show changes from working directory
+git diff --staged -  show changes from working directory in staged area
+
+1. Undo your Change
+      - git revert commit_number /HEAD
+      - git commit --amend
+
+  Exiting unix editor 
+      I - Insert
+      ESC - :wq
+
+2. working with open source repositories 
+  another person - Fork -  own Github profile - clone (modify) - update to own github profile - pull request - owner github repo - review by open source project maintainer  - merge to the open source project    
+      
+3. Markdown      
