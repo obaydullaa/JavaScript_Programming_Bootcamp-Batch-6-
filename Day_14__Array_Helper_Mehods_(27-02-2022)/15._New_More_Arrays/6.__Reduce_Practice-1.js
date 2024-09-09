@@ -30,23 +30,23 @@
 
 // console.log(result)
 
-let friends = [
-    {
-        name: 'Anna',
-        books: ['Bible', 'Harry Potter'],
-        age: 21,
-    },
-    {
-        name: 'Bob',
-        books: ['War and peace', 'Romeo and Juliet'],
-        age: 26,
-    },
-    {
-        name: 'Alice',
-        books: ['The Lord of the Rings', 'The shining'],
-        age: 18,
-    },
-]
+// let friends = [
+//     {
+//         name: 'Anna',
+//         books: ['Bible', 'Harry Potter'],
+//         age: 21,
+//     },
+//     {
+//         name: 'Bob',
+//         books: ['War and peace', 'Romeo and Juliet'],
+//         age: 26,
+//     },
+//     {
+//         name: 'Alice',
+//         books: ['The Lord of the Rings', 'The shining'],
+//         age: 18,
+//     },
+// ]
 
 // Expected Ans:
 //-------------------
@@ -55,24 +55,24 @@ let friends = [
 // ]
 //
 
-let allBooks = friends.reduce((accumulator, current) => {
-    console.log(accumulator, current)
-    return [...accumulator, ...current.books]
-}, [])
+// let allBooks = friends.reduce((accumulator, current) => {
+//     console.log(accumulator, current)
+//     return [...accumulator, ...current.books]
+// }, [])
 
-console.log(allBooks) //
-
-
+// console.log(allBooks) //
 
 
 
-let names = ['Alice', 'Bob',  'Tiff', 'Bruce', 'Alice'];
+
+
+// let names = ['Alice', 'Bob',  'Tiff', 'Bruce', 'Alice'];
 // ans: {'Alice' : 2, 'Bob' : 1, 'Bruce': 1, 'Tiff' : 1}
 
 // way 01
 ///------------------
-let countNames = names.reduce((allNames, name) =>{
-    console.log(allNames, name);
+// let countNames = names.reduce((allNames, name) =>{
+//     console.log(allNames, name);
     // way 01
     ///------------------
     // if(name in allNames) {
@@ -84,13 +84,13 @@ let countNames = names.reduce((allNames, name) =>{
 
       // way 02
     ///------------------
-    allNames[name] ??= 0;
-    allNames[name]++;
-    return allNames;
+//     allNames[name] ??= 0;
+//     allNames[name]++;
+//     return allNames;
 
-}, {})
+// }, {})
 
-console.log(countNames)
+// console.log(countNames)
 
 
 
