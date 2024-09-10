@@ -246,56 +246,116 @@
  * 
  */
 
-function one(fn){
-    return new Promise((resolve, reject) => {
-        setTimeout(()=> {
-            resolve(1);
-            // reject(new Error(1));
-        }, 2000)
+// function one(fn){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             resolve(1);
+//             // reject(new Error(1));
+//         }, 2000)
 
-    }) 
-}
+//     }) 
+// }
 
-function two(fn){
-    return new Promise((resolve, reject) => {
-        setTimeout(()=> {
-            resolve(2);
-            // reject(new Error(2));
-        }, 2000)
-    }) 
-}
+// function two(fn){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             resolve(2);
+//             // reject(new Error(2));
+//         }, 2000)
+//     }) 
+// }
 
-function three(fn){
-    return new Promise((resolve, reject) => {
-        setTimeout(()=> {
-            resolve(3);
-            // reject(new Error(3));
-        }, 2000)
-    }) 
-}
+// function three(fn){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             resolve(3);
+//             // reject(new Error(3));
+//         }, 2000)
+//     }) 
+// }
 
 
-one() 
-    .then((num1) => {
-        console.log(num1); 
-        two()
-            .then(((num2) => {
-                console.log(num2)
-                console.log(num1 + num2)
-                three()
-                    .then(((num3) => {
-                        console.log(num3)
-                        console.log(num1 + num2 + num3)
-                    }))
-                    .catch((err) => {
-                        console.log(err)
-                    })
-            }))
-            .catch((err) => {
-                console.log(err)
-            })
-    })
-    .catch((err) => {
-        console.log(err)
-    })
+// one() 
+//     .then((num1) => {
+//         console.log(num1); 
+//         two()
+//             .then(((num2) => {
+//                 console.log(num2)
+//                 console.log(num1 + num2)
+//                 three()
+//                     .then(((num3) => {
+//                         console.log(num3)
+//                         console.log(num1 + num2 + num3)
+//                     }))
+//                     .catch((err) => {
+//                         console.log(err)
+//                     })
+//             }))
+//             .catch((err) => {
+//                 console.log(err)
+//             })
+//     })
+//     .catch((err) => {
+//         console.log(err)
+//     })
 
+
+
+/**
+ * 7.promise utility
+ * -----------------------------
+ */
+
+
+// function one(fn){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(()=> {
+//             resolve(1);
+//             // reject(new Error(1));
+//         }, 2000)
+//     }) 
+// }
+
+// one()
+// .then((data) => {
+//     console.log(data);
+// })
+// .catch((err) => {
+//     console.log(err);
+// }).finally(() => {
+//     console.log('Promise result already reached')
+// })
+
+
+// function one() {
+//     return Promise.resolve(1);
+// }
+
+let p1 = Promise.resolve(1);
+let p2 = Promise.resolve(1);
+let p3 = Promise.reject(1);
+
+// one().then((data) => {
+//     console.log(data)
+// }).catch((err) => {
+//     console.log(err)
+// })
+
+
+// all => each and every concept resolve hole kaj korbe  : other wise err  
+// race => 1st result ar upore depend kore result dai
+
+Promise.all([p1, p2, p3]).then((data) =>  {
+    console.log(data);
+})
+.catch((err) => {
+    console.log(err)
+})
+
+
+Promise.race([p1, p2, p3]).then((data) =>  {
+    console.log(data);
+})
+.catch((err) => {
+    console.log(err)
+})
