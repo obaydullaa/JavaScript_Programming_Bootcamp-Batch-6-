@@ -5,16 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inspecting DOM</title>
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <title> Practice Inspecting DOM</title>
+    <!-- <link rel="stylesheet" href="assets/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="assets/css/styel.css">
+    <style>
+        .custom {
+            color: red;
+        }
+    </style>
 </head>
 
 <body>
     <div class="container mt-5" id="container">
         <h1>Product List</h1>
         <ul class="product-collection">
-            <li class="product-collection-item">Shoes</li>
+            <li class="product-collection-item" id="sample">Shoes</li>
             <li class="product-collection-item">T-shirt</li>
             <li class="product-collection-item">Laptop</li>
             <li class="product-collection-item">Microphone</li>
@@ -22,14 +27,14 @@
         </ul>
 
         <a href="google.com">link</a>
-        <form action="" method="POST" class="product-form">
+        <form class="product-form">
             <input type="text" name="productName" id="productName">
             <input type="submit" value="submit">
         </form>
     </div>
 
-    <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <!-- <script src="assets/js/jquery-3.6.0.slim.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script> -->
     <script src="assets/js/dom.js"></script>
 </body>
 
