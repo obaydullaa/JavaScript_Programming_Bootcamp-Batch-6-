@@ -1,6 +1,6 @@
 /**
- * 10.Exercise
- * -----------------------
+ * 11.Exercise solution-callback
+ * ------------------------------------
  */
 const users = [
     {
@@ -59,10 +59,41 @@ const coursesPrice = {
 // 3. price of the course -2s
 
 // finding user by ID 
-function getUser(){};
+function getUser(id, fn){
+    const user = users.find(user => user.id === id);
+    setTimeout(()=> {
+        fn(user);
+    }, 2000);
+};
 
 // finding course by using userId
-function getCourseList() {};
+function getCourseList(userId, fn) {
+    const userCourses = coursesList.find( course => course.userId === userId);
+    setTimeout(()=> {
+        fn(userCourses);
+    }, 2000);
+};
+
 
 //finding courses price and make sum and return total cost of the course 
-function totalCoursePrice(){}; 
+function totalCoursePrice(courses, fn){
+    let total = 0;
+    console.log(courses)
+    courses.forEach((course) => {
+        total += coursesPrice[course]
+        console.log(coursesPrice[course])
+    })
+    setTimeout(()=> {
+        fn(total);
+    }, 2000);
+}; 
+
+getUser (1, (user) => {
+    console.log(user)
+    getCourseList(user.id, (userCourses) => {
+        console.log(userCourses)
+        totalCoursePrice(userCourses.courses, (price) => {
+            console.log(price);
+        })
+    })
+})
