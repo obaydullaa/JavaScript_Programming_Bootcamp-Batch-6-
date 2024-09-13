@@ -18,3 +18,23 @@ function sum(a, b) {
 }
 
 console.log(sum(5, 5));
+
+
+
+/**
+ * Problem 02: 
+ * 
+ *  Write a function that checks if a number is even or odd.
+ * 
+ */
+
+function evenOrOdd(num) {
+    if(num % 2 == 0) {
+        return `This number ${num} is Even`;
+    } else {
+        return `This number ${num} is Odd`;
+
+    }
+}
+
+console.log(evenOrOdd(5))
