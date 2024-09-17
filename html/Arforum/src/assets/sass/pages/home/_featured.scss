@@ -1,0 +1,59 @@
+/* =================== Featured Start Here ==================== */
+
+.single-features {
+    padding: 30px;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+    background: linear-gradient(to left, hsl(var(--base)/0.5) 0%, hsl(var(--white)/0.08) 100%);
+    position: relative;
+    transition: all .4s;
+    border-radius: var(--border-radius);
+    &:hover::before {
+        top: 0px;
+        left: 0px;
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        height: 101%;
+        width: 100%;
+        background-color: transparent;
+        top: 10px;
+        left: -11px;
+        z-index: 1;
+        border-radius: var(--border-radius);
+        transition: 0.5s;
+        border: 3px solid hsl(var(--black));
+    }
+    &__icon {
+        margin-right: 20px;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px dashed hsl(var(--base));
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            z-index: 1;
+            animation: rotation-circle 7s infinite linear;
+        }
+        i {
+            text-align: center;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            color: hsl(var(--black));
+        }
+    }
+}
+@keyframes rotation-circle {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

@@ -1,0 +1,41 @@
+/*====================== Social Icon Style ====================*/
+.social-list {
+    display: flex;
+    flex-wrap: wrap; 
+    align-items: center;
+    &__item {
+        margin-right: 10px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
+        width: 45px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        position: relative;
+        overflow: hidden;
+        border: 0px solid hsl(var(--white)/0.4);
+        transition: 0.3s;
+        cursor: pointer;
+        color: hsl(var(--base)) !important;
+        background: hsl(var(--white)/.1);
+        &.active {
+            background-color: hsl(var(--base));
+            color: hsl(var(--white)) !important;
+            border-color: hsl(var(--base)) !important;
+        }
+        &:hover {
+            background-color: hsl(var(--base));
+            color: hsl(var(--white)) !important;
+        }
+        @include sm-screen {
+            width: 35px;
+            height: 35px;
+            font-size: 14px;
+        }
+    }
+}

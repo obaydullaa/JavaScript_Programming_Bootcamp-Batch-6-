@@ -1,0 +1,382 @@
+/*============ Table Style ============*/
+.table {
+	margin: 0;
+	font-size: 15px;
+	border-collapse: separate;
+	border-spacing: 0px 0px;
+	border: 1px solid  hsl(var(--white)/.3);
+	thead {
+		tr {
+			th {
+				text-align: center;
+				font-size: 14px;
+				padding: 18px 20px;
+				color: hsl(var(--dark)); 
+				font-family: var(--heading-font);
+				font-weight: 500;
+                border: 1px transparent hsl(var(--white)/0.03);
+				background-color: hsl(var(--base)/.1);
+				border-top: 0;
+				max-width: 170px;
+				border-left: 0;
+				border-right: 0;
+				text-transform: capitalize;
+				white-space: nowrap;
+				&:first-child {
+					text-align: left;
+					border-radius: 0px 0 0 0;
+					border-right: 0;
+				}
+				&:last-child {
+					border-radius: 0 0px 0 0;
+					text-align: right;
+					border-left: 0;
+				}
+			}
+		}
+	}
+	tbody {
+		border: 0 !important;
+        // background-color: hsl(var(--black)); 
+		color: hsl(var(--dark)); 
+		border: 1px solid hsl(var(--base)/0.1);
+		tr {
+				
+			&:hover {
+				background-color: hsl(var(--base)/0.02);
+			}
+			&:nth-child(even) {
+				background-color: hsl(var(--black)/0.02);
+                border-bottom: 1px solid  hsl(var(--dark) / .06);
+				&:hover {
+					background-color: hsl(var(--base)/0.02);
+				}
+			}
+			&:last-child {
+				td {
+					&:first-child {
+						border-radius: 0 0 0px 5px;
+						border-right: 0;
+					}
+					&:last-child {
+						border-radius: 0 0 5px 0;
+						border-left: 0;
+					}
+				}
+			}
+			td {
+				vertical-align: middle;
+				padding: 10px 10px;
+				border-width: 1px;
+                border: 0;
+				font-family: var(--heading-font);
+                color: hsl(var(--dark)); 
+				max-width: 150px;
+				text-align: center;
+				border: 1px solid hsl(var(--black)/0.03);
+				border-left: 0;
+				font-size: 14px;
+				border-right: 0;
+				white-space: nowrap;
+				@include msm-screen {
+					white-space: initial;
+					padding: 6px 10px;
+				}
+				img {
+					width: 80px;
+					object-fit: cover;
+					border-radius: 4px;
+				}
+				&::before {
+					content: attr(data-label);
+					font-family: var(--heading-font);
+					font-size: 15px;
+					color: hsl(var(--dark)); 
+					font-weight: 500;
+					display: none;
+                    width: 50% !important;
+                    text-align: left;
+				}
+				&:first-child {
+					text-align: left;
+				}
+				&:last-child {
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+.table--responsive--md {
+    @include sm-screen {
+        thead {
+			display: none;
+		}
+		tbody {
+			tr {
+				display: block;
+				td {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 35px;
+					text-align: right;
+					padding: 10px 10px;
+					border: none;
+					border-bottom: 1px solid hsl(var(--black) / .08);  
+					max-width: unset;
+					&:last-child {
+						border: none;
+					}
+					&:first-child {
+						text-align: right;
+					}
+					&::before {
+						display: block;
+					}
+				}
+			}
+		}
+    }
+	@include sm-screen {
+        tbody {
+			tr {
+				td {
+					border: 0;
+				}
+			}
+		}
+    }
+}
+.table--responsive--lg {
+    @include md-screen {
+        thead {
+			display: none;
+		}
+		tbody {
+			tr {
+				display: block;
+				td {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 35px;
+					text-align: right;
+					padding: 10px 10px;
+					border: none;
+					border-bottom: 1px solid hsl(var(--black) / .08);  
+					max-width: unset;
+					&:last-child {
+						border: none;
+					}
+					&:first-child {
+						text-align: right;
+					}
+					&::before {
+					    display: block;
+					}
+				}
+			}
+		}
+    }
+    // @include md-screen {
+    //     tbody {
+	// 		tr {
+	// 			td {
+	// 				border: none;
+	// 			}
+	// 		}
+	// 	}
+    // }
+}
+.table--responsive--xl {
+    @include lg-screen {
+        thead {
+			display: none;
+		}
+		tbody {
+			tr {
+				display: block;
+				td {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 35px;
+					text-align: right;
+					padding: 10px 10px;
+					border: none;
+					border-bottom: 1px solid hsl(var(--black) / .08);  
+					max-width: unset;
+					&:last-child {
+						border: none;
+					}
+					&:first-child {
+						text-align: right;
+					}
+					&::before {
+						display: block;
+					}
+				}
+			}
+		}
+    }
+    
+    @include lg-screen {
+        tbody {
+			tr {
+				td {
+					border: 0;
+				}
+			}
+		}
+    }
+}
+.table--responsive--xl {
+    @include xl-screen {
+        thead {
+			display: none;
+		}
+		tbody {
+			tr {
+				display: block;
+				td {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					gap: 35px;
+					text-align: right;
+					padding: 10px 10px;
+					border: none;
+					border-bottom: 1px solid hsl(var(--black) / .08);  
+					max-width: unset;
+					&:last-child {
+						border: none;
+					}
+					&:first-child {
+						text-align: right;
+					}
+					&::before {
+						display: block;
+					}
+				}
+			}
+		}
+    }
+    
+    @include xl-screen {
+        tbody {
+			tr {
+				td {
+					border: 0;
+				}
+			}
+		}
+    }
+}
+
+.table-wrapper {
+	@include md-screen {
+		.table--responsive--lg tbody tr td {
+			display: block;
+		}
+	}
+}
+
+.table-btn {
+	padding: 6px 10px;
+	text-align: center;
+	border-radius: var(--border-radius-sm);
+	margin-bottom: 2px;
+	background-color: hsl(var(--base));
+	color: hsl(var(--white));
+}
+
+.table-btn {
+	&--primary {
+        background-color: hsl(var(--primary) / .1) !important; 
+        border: 1px solid hsl(var(--primary)) !important;
+        color: hsl(var(--primary)) !important;
+		&:hover {
+			background-color: hsl(var(--primary)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+	&--secondary {
+        background-color: hsl(var(--secondary) / .1) !important; 
+        border: 1px solid hsl(var(--secondary)) !important;
+        color: hsl(var(--secondary)) !important;
+		&:hover {
+			background-color: hsl(var(--secondary)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+	&--success {
+        background-color: hsl(var(--success) / .1) !important; 
+        border: 1px solid hsl(var(--success)) !important;
+        color: hsl(var(--success)) !important;
+		&:hover {
+			background-color: hsl(var(--success)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+	&--danger {
+        background-color: hsl(var(--danger) / .1) !important; 
+        border: 1px solid hsl(var(--danger)) !important;
+        color: hsl(var(--danger)) !important;
+		&:hover {
+			background-color: hsl(var(--danger)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+	&--info {
+        background-color: hsl(var(--info) / .1) !important; 
+        border: 1px solid hsl(var(--info)) !important;
+        color: hsl(var(--info)) !important;
+		&:hover {
+			background-color: hsl(var(--info)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+	&--violet {
+        background-color: hsl(var(--violet) / .1) !important; 
+        border: 1px solid hsl(var(--violet)) !important;
+        color: hsl(var(--violet)) !important;
+		&:hover {
+			background-color: hsl(var(--violet)) !important;
+			color: hsl(var(--white)) !important;
+		}
+    }
+}
+
+.btn-outline--info:hover {
+    background-color: #1e9ff2;
+}
+
+
+/*============== Table Style dark to Light ============*/
+.dark-to-light-table {
+	.table thead tr th {
+		background-color: hsl(var(--base)/0.1);
+		color: hsl(var(--white));
+		border: 1px solid hsl(var(--white)/0.07);
+		text-transform: uppercase;
+	}
+	.table tbody tr td {
+		color: hsl(var(--white)/.9);
+		border: 1px solid hsl(var(--black)/0.1);
+		&::before {
+			color: hsl(var(--white)/.9);
+		}
+	}
+	.table tbody tr:nth-child(even) {
+		background-color: hsl(var(--white)/0.02);
+		border-bottom: 0px solid hsl(var(--dark)/0.06);
+	}
+	.table .table-btn i {
+		color: hsl(var(--black)/.9);
+		transition: .3s all;
+		&:hover {
+			color: hsl(var(--black));
+		}
+	}
+}

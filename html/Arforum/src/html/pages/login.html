@@ -1,0 +1,68 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+<!-- Login Start Here  -->
+<section class="account-area bg-img" style="background-image: url(assets/images/login/login-bg.jpg);">
+    <div class="account-inner">
+        <div class="container-fluid">
+            <div class="account-form-box-wrapper">
+                <div class="account-form-box">
+                    
+                    <div class="account-form-box__content">
+                        <a href="index.html" class="login-logo">
+                            <img src="assets/images/logo/logo.png" alt="">
+                        </a>
+                        <h3 class="account-form-box__title">Welcome To <span class="text--base ms-1">AvronFund</span></h3>
+                        <p class="account-form-box__desc">Please input your username and password and login to your account to get access to your dashboard.</p>
+                    </div>
+                    <form action="#" method="POST">
+                        <div class="row gy-4">
+                            <div class="col-sm-12">
+                                <div class="form-group">
+                                    <label for="email" class="form--label">Email / User Name</label>
+                                    <div class="input--group">
+                                        <input type="text" class="form--control" id="email" placeholder="Email Address">
+                                        <div class="input--icon">
+                                            <i class="fas fa-envelope"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="your-password" class="form--label">Password</label>
+                                <div class="input-group">
+                                    <input id="your-password" type="password" class="form-control form--control" value="Password">
+                                    <div class="password-show-hide toggle-password-change fas fa-eye-slash" data-target="your-password"> </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="d-flex flex-wrap justify-content-between">
+                                    <div class="form--check d-flex">
+                                        <input class="form-check-input" type="checkbox" value="" id="remember">
+                                        <label class="form-check-label" for="remember">Remember me </label>
+                                    </div>
+                                    <a href="forgot-password.html" class="forgot-password text--base">Forgot Your Password?</a>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn btn--base w-100">
+                                    Sign In <i class="fas fa-arrow-right"></i>
+                                    <span></span>
+                                </button>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="have-account text-center">
+                                    <p class="have-account__text">Don't Have An Account? <a href="registration.html" class="have-account__link text--base">Create Account</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Login End Here  -->
+
+@@include('../partials/_template-bottom.html')

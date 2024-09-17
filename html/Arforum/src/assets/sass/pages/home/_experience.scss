@@ -1,0 +1,65 @@
+/*====================== Experience ====================*/
+.experience-area {
+    .col-lg-3:nth-child(even) .experience{
+        margin-top: 40px;
+        background-color: hsl(var(--base)/.04);
+        @include sm-screen {
+            margin-top: 0;
+        }
+    }
+}
+
+.experience {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 30px 30px 35px;
+    border: 2px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-color: hsl(var(--white)/.01);
+
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+        &::after {
+            left: -25px;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: -13px;
+        left: -225px;
+        width: 149px;
+        height: 116px;
+        background: hsl(var(--base)/0.04);
+        transform: rotate(168deg);
+        border-radius: 10px;
+        transition: all .4s ease-in-out;
+    }
+    &__icon {
+        margin-bottom: 20px;
+        position: relative;
+        transition: all .6s ease-in-out;
+        h3 {
+            font-size: 35px;
+            color: hsl(var(--dark));
+            margin-top: 2px;
+            text-align: center;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+            font-weight: 700;
+            margin: auto;
+        }
+    }
+    &__content  {
+        h3 {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+/*============= Tob Donor css =============*/
+img.donor-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.05;
+}
+.top-donor {
+    border-radius: var(--border-radius);
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    padding: 20px;
+    padding-top: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px ;
+    background-color: hsl(var(--white));
+    box-shadow: 1px 2px 8px rgba(61, 90, 125, 0.08);
+    border: 2px solid hsl(var(--black)/0.04);
+    z-index: 1;
+    &:hover {
+        box-shadow: 1px 2px 8px rgba(61, 90, 125, 0.08);
+        border: 2px solid hsl(var(--base)/0.8);
+        transform: translateY(-3px);
+        &:before {
+            border-top-left-radius: 120px;
+            height: 35px;
+            width: 35px;
+            opacity: 1;
+            visibility: visible;
+            background: hsl(var(--base));
+        }
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 0px;
+        width: 0px;
+        background: hsl(var(--base));
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1;
+        border-top-left-radius: 120px;
+        transition: all .4s;
+    }
+    &__icon {
+            font-size: 25px;
+            color: transparent;
+            -webkit-text-stroke: .095rem hsl(var(--black));
+            position: absolute;
+            top: -31px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            font-weight: 600;
+            letter-spacing: -2px;
+            background: hsl(var(--base));
+            border-radius: 50%;
+            border: 5px solid hsl(var(--white));
+            height: 60px;
+            width: 60px;
+            line-height: 53px;
+            text-align: center;
+    }
+    &__count {
+        font-size: 30px;
+        font-weight: 800;
+        color: hsl(var(--black)/0.4);
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    img.donor-bg {
+        position: absolute;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        opacity: .5;
+        border-radius: 4px;
+        border-radius: 4px;
+    }
+    &__content p.amount {
+        display: inline-block;
+        color: hsl(var(--base));
+        font-weight: 500;
+        border-radius: 4px;
+        line-height: 27px;
+        font-size: 16px;
+        background: hsl(var(--white));
+    }
+}

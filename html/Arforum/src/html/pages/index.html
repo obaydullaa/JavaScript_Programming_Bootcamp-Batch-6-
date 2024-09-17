@@ -1,0 +1,789 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_header-two.html')
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 d-lg-block d-none">
+            @@include('../partials/_sidebar-left.html') 
+        </div>
+        <div class="col-xl-6 col-lg-6">
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Guy Hawkins</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 5 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div>
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">We Providing The Best Quality Online Exam.</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>435</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>432 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>32 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-2.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Jacob Jones</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 7 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div>
+                            <!-- <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div> -->
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">Congressman shumes media for ignoring</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>212</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>213 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>04 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-3.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Bessie Cooper</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 20 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <!-- <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div> -->
+                            <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div>
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">Congressman shumes media for ignoring</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>783</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>123 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>34 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-4.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Kristin Watson</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 30 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div>
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">my mom cooks dinner with this every day</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>43</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>1542 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>15 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-5.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Kristin Watson</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 30 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div>
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">my mom cooks dinner with this every day</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>43</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>1542 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>15 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-1.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Guy Hawkins</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 5 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div>
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">We Providing The Best Quality Online Exam.</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>435</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>432 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>32 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-2.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Jacob Jones</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 7 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div>
+                            <!-- <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div> -->
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">Congressman shumes media for ignoring</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>212</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>213 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>04 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><img src="assets/images/team/team-3.png" alt=""></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title"><a href="user-profile.html">Bessie Cooper</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 20 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <!-- <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div> -->
+                            <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div>
+                        </div>
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item" data-bs-toggle="modal" data-bs-target="#reportModal">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">Congressman shumes media for ignoring</a></h4>
+                    <p class="descriptions">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post...</p>
+                </div>
+                <div class="forum-card__bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>783</h6>
+                            </li>
+                            <li class="up-vote" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down"></i>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <a href="forum-details.html"> <i class="fa-regular fa-eye"></i> <span>123 Views</span></a>
+                             </li>
+                             <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <a href="forum-details.html"> <i class="fa-regular fa-message"></i> <span>34 Comments</span></a>
+                             </li>
+                            <li class="share-button" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Share">
+                                <i class="fa-solid fa-share-nodes"></i> <span>Share</span>
+                            </li>                           
+                            <div class="social-dropdown-menu">
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </div>
+                                <div class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </div>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+
+        </div>
+        <div class="col-xl-3 col-lg-3 d-lg-block d-none">
+            @@include('../partials/_sidebar-right.html')
+        </div>
+    </div>
+</div>
+
+<!-- report modal -->
+<div class="custom--modal modal fade" id="reportModal" tabindex="-1" aria-labelledby="reportModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="reportModalLabel">Report Reason</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="address" class="form--label">Reason</label>
+                    <div class="input--group textarea">
+                        <textarea id="address" class="form--control h-15" placeholder="Reason"> </textarea>
+                    </div> 
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn--base">Send</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- @@include('../partials/_cta.html') -->
+
+<!-- @@include('../partials/_blog.html') -->
+
+<!-- @@include('../partials/_counter.html') -->
+
+<!-- @@include('../partials/_services.html') -->
+
+<!-- @@include('../partials/_top-branches.html') -->
+
+<!-- @@include('../partials/_accordion.html') -->
+
+
+
+<!-- Footer -->
+<!-- @@include('../partials/_footer.html') -->
+@@include('../partials/_template-bottom.html')

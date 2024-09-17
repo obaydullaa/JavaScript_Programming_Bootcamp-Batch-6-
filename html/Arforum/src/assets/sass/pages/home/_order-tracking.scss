@@ -1,0 +1,85 @@
+/*======== Order Tracking Number Css Start =======*/
+
+.order-track-wrap {
+    position: relative;
+    .btn.btn--base {
+        position: absolute;
+        right: 0;
+        height: 100%;
+        border-radius: 0px 4px 4px 0px;
+    }
+}
+
+.track-wrapper {
+    margin: 0 -15px -30px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 60px;
+    .track-item-box:last-child:before {
+        display: none;
+    }
+}
+
+.track-item-box {
+    width: 25%;
+    padding: 0 15px;
+    margin: 0 auto 30px;
+    text-align: center;
+    position: relative;
+    transition: all ease 0.3s;
+    @include sm-screen {
+        width: 50%;
+        &:nth-of-type(even) {
+            &::before {
+                display: none;
+            }
+        }
+    }
+    &::before {
+        position: absolute;
+        content: "";
+        left: 100%;
+        top: 54%;
+        width: 92%;
+        height: 5px;
+        background: #ddd;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        @include md-screen {
+            width: 89%;
+        }
+        @include sm-screen {
+            width: 90%;
+            top: 55%;    
+        }
+        @include xsm-screen {
+            width: 88%;
+            top: 56%;  
+        }
+    }
+    &__circle-box {
+        height: 26px;
+        width: 26px;
+        border: 5px solid #ddd;
+        border-radius: 50%;
+        margin: 12px auto 15px;
+        position: relative;
+    }
+    &__icon {
+        font-size: 35px;
+        color: hsl(var(--base)/.9);
+    }
+    &.completed {
+        .track-item-box__circle-box {
+            border-color: hsl(var(--success));
+        }
+        &::before {
+            background: hsl(var(--success));
+        }
+        .track-item-box__icon {
+            color: hsl(var(--success));
+        }
+    }
+}
+

@@ -1,0 +1,119 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_dashboard_sidebar-menu.html')
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard-wrapper">
+    <div class="dashboard-container-wrapper">
+        <div class="container-fluid">
+
+            @@include('../partials/_dashboard-header.html')
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="dashboard-card-wrap mt-0">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6">
+                                <div class="dashboard-card-wrap">
+                                    <form action="">
+                                        <div class="row gy-4">
+                                            <div class="col-12">
+                                                <h4 class="dashboard-title">Create Your Campaign</h4>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="first_name" class="form--label required">Campaign Title</label>
+                                                    <div class="input--group">
+                                                        <input type="text" class="form--control" id="first_name" placeholder="Campaign Title">
+                                                        <div class="input--icon">
+                                                            <i class="fa-solid fa-hand-holding-dollar"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="form--label required">Select Category</label>
+                                                    <div class="col-sm-12">
+                                                        <select class="form--control form-select">
+                                                            <option value="volvo">Category....</option>
+                                                            <option value="volvo">Category....</option>
+                                                            <option value="saab">Category....</option>
+                                                            <option value="mercedes">Category....</option>
+                                                            <option value="audi">Category....</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="form-label required" for="amount">Goal Amount</label>
+                                                <div class="input-group input--group country-code">
+                                                    <span class="input-group-text" id="basic-addon1">Usd</span>
+                                                    <input type="text" class="form--control" id="amount" placeholder="Enter Amount" aria-label="Username" aria-describedby="basic-addon1">
+                                                    <div class="input--icon">
+                                                        <i class="fa-solid fa-dollar-sign"></i>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for="first_name" class="form--label required">End Date</label>
+                                                    <div class="input--group">
+                                                        <input type="text" class="form--control datepicker-active" id="first_name" placeholder="End Date" data-language="en">
+                                                        <div class="input--icon">
+                                                            <i class="fa-solid fa-calendar-days"></i>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label for=address" class="form--label required">Description</label>
+                                                    <div class="input--group textarea">
+                                                        <textarea type="text" id=address" class="form--control" placeholder="Description"> </textarea>
+                                                        <div class="input--icon">
+                                                            <i class="fas fa-address-card"></i>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-12">
+                                                <div class="attachment_wrapper mb-4">
+                                                    <div class="form-group profile mb-15">
+                                                        <label class="form--label required" for="attachments">Attachments:- > </label> 
+                                                        <div class="single-input form-group mt-3 mb-1">
+                                                            <input class="form--control" id="attachments" type="file">
+                                                        </div>
+                                                        <p>Allowed File Extensions: .jpg, .jpeg, .png, .pdf, .doc, .docx</p>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="text-end">
+                                                    <button type="submit" class="btn btn--base btn--sm ms-2">
+                                                        Add New
+                                                        <span></span>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="col-sm-12 text-end">
+                                                <button type="submit" class="btn btn--base  ms-2">
+                                                    Submit
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
+<!-- ==================== Dashboard End Here ==================== -->
+
+@@include('../partials/_template-bottom.html')

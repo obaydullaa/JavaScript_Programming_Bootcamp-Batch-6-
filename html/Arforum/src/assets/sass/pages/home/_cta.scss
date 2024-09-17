@@ -1,0 +1,53 @@
+/*============= Cta Style ===========*/
+.cta-area {
+    .airplane-icon-right {
+        position: absolute;
+        right: 10%;
+        top: 37%;
+        opacity: .2;
+        @include xxl-screen {
+            right: 1%;
+        }
+        @include lg-screen {
+            right: 1%;
+            width: 12%;
+        }
+    }
+    .airplane-icon-left {
+        position: absolute;
+        left: 10%;
+        top: 37%;
+        opacity: .2;
+        @include xxl-screen {
+            left: 1%;
+        }
+        @include lg-screen {
+            left: 1%;
+            width: 12%;
+        }
+    }
+}
+
+.cta-wrapper {
+    .subtitle {
+        margin-bottom: 15px;
+    }
+    .title-one {
+        color: hsl(var(--white));
+        margin-bottom: 25px;
+        font-size: 45px;
+        @include lg-screen {
+            font-size: 40px;
+        }
+        @include sm-screen {
+            font-size: 30px;
+        }
+        @include msm-screen {
+            font-size: 24px;
+        }
+    }
+    .section-heading .subtitle-big {
+        color: transparent;
+        -webkit-text-stroke: 1px hsl(var(--white)/0.4);
+    }
+}

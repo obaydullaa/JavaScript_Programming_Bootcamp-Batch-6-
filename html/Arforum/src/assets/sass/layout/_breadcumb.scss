@@ -1,0 +1,53 @@
+/*====================== Breadcumb Css Start ====================*/
+.breadcumb {
+    position: relative;
+    z-index: 1;
+    padding: 240px 0 105px;
+    background: hsl(var(--base)/0.11);
+    
+    @include lg-screen {
+        padding: 210px 0 80px;
+    }
+    @include md-screen {
+        padding: 130px 0 60px;
+    }
+    @include msm-screen {
+        padding: 110px 0 45px;
+    }
+    &__wrapper {
+        text-align: center;
+    }
+    &__title {
+        color: hsl(var(--white)); 
+        font-weight: 700;
+        font-size: 30px;
+        @include msm-screen {
+            font-size: 25px;
+        }
+    }
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__item {
+        color: hsl(var(--base)); 
+        padding: 0 5px;
+        font-weight: 700;
+        font-size: 16px;
+            @include msm-screen {
+                font-size: 16px;
+            }
+        &-text {
+            color: hsl(var(--white)); ;
+        }
+    }
+    &__link {
+        color: hsl(var(--base));  
+        font-weight: 700;
+        &:hover {
+            color: hsl(var(--base)); ;
+        }
+    }
+}
+// ====================== Breadcumb Css End ====================

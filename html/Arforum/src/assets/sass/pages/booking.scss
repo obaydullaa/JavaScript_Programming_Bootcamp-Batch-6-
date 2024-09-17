@@ -1,0 +1,162 @@
+/*=============== Booking area ===============*/
+.booking-area-wrapper {
+    background: hsl(var(--white));
+    padding: 15px 25px;
+    border-radius: 4px;
+}
+
+.booking {
+    &__top {
+        border-bottom: 2px solid hsl(var(--black)/0.06);
+        padding-bottom: 10px;
+        
+        .place {
+            padding-right: 0;
+            margin-right: 0;
+        }
+        @include msm-screen {
+            .place {
+                padding: 0;
+                text-align: center;
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+
+.booking {
+    &__bottom  {
+        @include md-screen {
+            flex-direction: column;
+        }
+    }
+
+    &__items {
+        width: 48%;
+        @include md-screen {
+            width: 100%;
+        }
+        .single-item {
+            border-bottom: 1px solid hsl(var(--black)/.1);
+            margin-bottom: 25px;
+            padding-bottom: 20px;
+            &:last-child {
+                border: 0;
+            }
+        }
+        
+        .single-item {
+            @include xxsm-screen {
+                flex-direction: column;
+            }
+            &__left {
+                @include xxsm-screen {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+    }
+}
+
+.booking__bottom  {
+    .feature {
+        color: hsl(var(--black)/.7);
+        margin-bottom: 7px;
+        font-size: 14px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        i {
+            font-size: 11px;
+            margin-right: 3px;
+            margin-right: 8px;
+        }
+        .dot {
+            font-size: 8px;
+            color: hsl(var(--black)/.6);
+        }
+    }
+    .selected-items {
+        width: 48%;
+        background: hsl(var(--black)/0.02);
+        padding: 33px 20px;
+        height: 100%;
+        border-radius: 5px;
+        border: 1px solid hsl(var(--black)/.1);
+        @include md-screen {
+            width: 100%;
+        }
+        @include xsm-screen {
+            padding: 20px 15px;
+        }
+        .selected-item-single {
+            margin-bottom: 25px;
+            border-bottom: 1px solid hsl(var(--black)/.1);
+            padding-bottom: 20px;
+            .title-two {
+                @include xsm-screen {
+                    font-size: 16px !important;
+                }
+            }
+        }
+        &:last-child.selected-item-single {
+            border-bottom: 4px double hsl(var(--black)/.1);
+        }
+        .coupon-code {
+            background: hsl(var(--white));
+            padding: 10px 10px;
+            border: 1px dashed hsl(var( --black)/.2);
+            border-radius: 4px;
+            .btn {
+                @include xxsm-screen {
+                    width: 50%;
+                    padding: 0;
+                }
+            }
+            i {
+                background: hsl(var(--base)/.2);
+                padding: 7px;
+                border-radius: 50%;
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .item-count {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 17px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        width: 115px;
+        .count-btn {
+            background: hsl(var(--base));
+            color: hsl(var(--white));
+            padding: 5px 11px;
+            font-size: 13px;
+            border-radius: 4px;
+            cursor: pointer;
+            border: 1px solid hsl(var(--black)/.1);
+            transition: .3s all;
+            @include xsm-screen {
+                padding: 5px 10px;
+            }
+        }
+        .increase-btn.count-btn:hover {
+            background: transparent;
+            color: hsl(var(--black)/.5);
+        }
+        .decrease-btn.count-btn {
+            background: transparent;
+            color: hsl(var(--black)/.6);
+        }
+        .decrease-btn.count-btn:hover {
+            background: hsl(var(--base));
+            color: hsl(var(--white));
+        }
+    }
+    
+}

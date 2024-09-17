@@ -1,0 +1,34 @@
+/*================== Tab Content =============*/
+.custom--tab {
+    justify-content: start;
+    border-radius: 4px;
+    margin-bottom: 35px;
+    border: 0;
+    .nav-item {
+        border-bottom: 0;
+        padding-right: 7px;
+        margin-bottom: 5px;
+        .nav-link {
+            color: hsl(var(--black)/.8);
+            padding: 13px 18px;
+            background-color: hsl(var(--base)/0.2) !important;
+            border-radius: 4px;
+            transition: 0.4s;
+            border: 0px solid hsl(var(--black)/0.08) !important;
+            font-size: 17px;
+            text-transform: capitalize;
+            font-weight: 600;
+            @include lg-screen {
+                padding: 12px 15px !important;
+            }
+            &.active {
+                color: hsl(var(--black)); 
+                background-color: hsl(var(--base)) !important;
+                border: 0px solid transparent !important;
+            }
+            &:hover {
+                color: hsl(var(--black));
+            }
+        }
+    }
+}

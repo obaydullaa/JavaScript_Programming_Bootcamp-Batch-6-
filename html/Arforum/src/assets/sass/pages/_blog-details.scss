@@ -1,0 +1,93 @@
+  /*=================== Blog Details =========*/
+
+.blog-details {
+    overflow: hidden;
+    box-shadow: 0px 2px 15px hsl(var(--white)/0.25);
+    padding-right: 50px;
+    @include md-screen {
+        padding-right: 0px;
+    }
+    .blog-item:hover .blog-item__thumb img {
+        transform: scale(1);
+    }
+
+    .blog-item {
+        box-shadow: none;
+        &__thumb {
+            max-height: 100%;
+            border-radius: 8px;                 
+            @include md-screen {
+            }
+            @include sm-screen {
+            }
+            img {
+                @include fit_image;
+            }
+        }
+        &__content {
+            padding-bottom: 1px;
+            padding-top: 10px;
+            position: static;
+        }
+        
+    .text-list.inline {
+        position: inherit;
+        margin: 0px;
+        margin-bottom: 0;
+        background: hsl(var(--base));
+        padding: 8px 10px;
+        display: inline-block;
+        border-radius: 4px;
+    }
+    }
+    &__content {
+        padding: 20px 0px;
+        @include sm-screen {
+            padding: 20px 25px;
+        }
+        @include msm-screen {
+            padding: 15px 15px;
+        }
+    }
+    &__title {
+        margin-bottom: 15px;
+    }
+    &__desc {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .blog-bottom-wrap {
+        border-top: 0;
+        padding: 20px 25px 0px;
+    }
+    
+}
+
+
+
+blockquote {
+    background-color: hsl(var(--base) / .05);
+    padding: 60px 20px 20px;
+    border-radius: 5px;
+    border-left: 3px solid hsl(var(--base));
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 400;
+    position: relative;
+    margin-top: 30px;
+    &::before {
+        content: "\f10e";
+        position: absolute;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-size: 80px;
+        top: -56px;
+        right: 50%;
+        z-index: -1;
+        opacity: .4;
+        transform: translateX(39%);
+    }
+}
+.social-list.blog-details a.social-list__link {
+    color: hsl(var(--dark)) !important;
+}

@@ -1,0 +1,383 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_header-two.html')
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 d-lg-block d-none">
+            @@include('../partials/_sidebar-left.html') 
+        </div>
+        <div class="col-xl-6 col-lg-6">
+
+            <div class="forum-card">
+                <div class="forum-card__top">
+                    <div class="forum-card__top-left">
+                        <div class="thumb">
+                            <a href="user-profile.html"><a href="user-profile.html"><img src="assets/images/team/team-1.png" alt=""></a></a>
+                        </div>
+                        <div class="content">
+                            <h5 class="title">Posted by <a href="#">Demo User</a></h5>
+                            <p class="times"><span class="icon"><i class="fa-regular fa-clock"></i></span> 5 Minutes ago</p>
+                        </div>
+                    </div>
+                    <div class="forum-card__top-right">
+                        <div class="dropdown-icon">
+                            <i class="fa-solid fa-ellipsis"></i>
+                        </div>
+                        <ul class="right-dropdown-menu">
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item bookmark">
+                                <i class="fa-regular fa-star"></i>  <span>Add to favorites</span>
+                               </button>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <a class="menu-item edit" href="#">
+                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                               </a>
+                            </li>
+                            <li class="right-dropdown-menu__item">
+                               <button class="menu-item report">
+                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                               </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="forum-card__body">
+                    <h4 class="title"><a href="forum-details.html">Top Tips for New Forum Members</a></h4>
+                    <p class="descriptions mb-4">Are you new to PHP? This blog post is designed for beginners, providing a step-by-step guide to getting started with PHP. Learn the basics of PHP syntax, setting up your development environment, and creating your first PHP script. By the end of this post Whether you're a seasoned forum.</p>
+                    <h4>Read the Rules and Guidelines</h4>
+                    <p class="descriptions mb-4">Every forum has its own set of rules and guidelines. Before you start posting, take some time to read these carefully. Understanding what is expected of you will help you avoid any unintentional faux pas and ensure you are contributing positively to the community. Many forums have a section specifically for new members to introduce themselves. Take advantage of this opportunity to say hello and share a bit about yourself. This is a great way to make a positive first impression and start building connections with other members</p>
+
+                    <h4>Search Before You Post</h4>
+                    <p class="descriptions mb-4">EOnline forums are a melting pot of diverse opinions and perspectives. Always engage with others respectfully, even if you disagree with them. Avoid inflammatory language, personal attacks, and trolling. Remember, behind every username is a real person. Take advantage of this opportunity to say hello and share a bit about yourself. This is a great way to make a positive first personal attacks, and trolling. Remember, behind every username is a real person</p>
+
+                    <h4>Contribute Value</h4>
+                    <p class="descriptions mb-4"> Building relationships and becoming a respected member of the community takes time. Don’t be discouraged if you don’t get immediate responses to your posts. Keep participating and and provide constructive feedback. and provide constructive feedback. contributing, and over time. Aim to add value to the conversations you participate in. Share your knowledge, ask thoughtful questions, and provide constructive feedback. The more you contribute meaningfully, the more you’ll be appreciated by the community.</p>
+
+                    <p class="descriptions mb-4">By following these tips, you’ll not only make a great start as a new forum member but also contribute to a positive and thriving community. Happy posting!</p>
+                </div>
+                <div class="forum-card__bottom border-bottom"> 
+                    <div class="bottom-left">
+                        <ul>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote">
+                                <i class="fa-solid fa-arrow-up-long"></i>
+                            </li>
+                            <li class="vot-count">
+                                <h6>435</h6>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                <i class="fa-solid fa-arrow-down-long"></i>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Views">
+                                <i class="fa-regular fa-eye"></i> <span>432 Views</span>
+                            </li>
+                            <li data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Total Comments">
+                                <i class="fa-regular fa-message"></i> <span>32 Comments</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="bottom-right">
+                        <ul>
+                            <li class="share-button"><i class="fa-solid fa-share-nodes"></i> <span>Share</span></li>
+
+                            <ul class="social-dropdown-menu">
+                                <li class="social-dropdown-menu__item">
+                                   <button class="menu-item report">
+                                        <i class="fa-brands fa-facebook-f"></i> <span>Facebook</span>
+                                   </button>
+                                </li>
+                                <li class="social-dropdown-menu__item">
+                                   <button class="menu-item bookmark">
+                                        <i class="fa-brands fa-twitter"></i> <span>Twitter</span>
+                                   </button>
+                                </li>
+                                <li class="social-dropdown-menu__item">
+                                   <a class="menu-item edit" href="#">
+                                    <i class="fa-brands fa-linkedin-in"></i> <span>Linkedin</span>
+                                   </a>
+                                </li>
+                            </ul>
+                        </ul>
+                        <div class="tags-wrap">
+                            <!-- <div class="tags"><i class="fa-solid fa-calendar-check"></i> <span>Events</span></div> -->
+                            <div class="tags"><i class="fa-regular fa-address-card"></i> <span>Post</span></div>
+                            <!-- <div class="tags"><i class="fa-solid fa-toolbox"></i> <span>Jobs</span></div> -->
+                        </div>
+                    </div>
+                </div>
+                <!-- comment form start -->
+                <div class="contact-form d-flex">
+                    <div class="comment-list__thumb">
+                        <img src="assets/images/team/team-1.png" alt="">
+                    </div>
+                    <div class="comment-list__content">
+                        <form action="#" autocomplete="off">
+                            <div class="row gy-md-4 gy-2">
+                                <div class="col-sm-12">
+                                    <textarea class="form--control" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-sm-12">
+                                    <button class="btn btn--base"> Submit <span class="button__icon"><i class="fas fa-paper-plane"></i></span></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- comment form start -->
+
+                <!-- comment reply start -->
+                <div class="forum-card__comments">
+                    <ul class="comment-list">
+                        <li class="comment-list__item border-main d-flex flex-wrap">
+                            <div class="comment-list__thumb">
+                                <img src="assets/images/team/team-1.png" alt="">
+                            </div>
+                            <div class="comment-list__content">
+                                <h4 class="comment-list__name">Leslie Alexander</h4>
+                                <span class="comment-list__time"> <span class="comment-list__time-icon"><i class="far fa-clock"></i></span> 05 min ago </span>
+                                <p class="comment-list__desc">"I'm in a HARD to arrive at area. In a real sense at the lower part of a gorge, mountains on one or the other side of me, encompassed by tall trees. The real estate professional who sold me the property said Internet would be difficult to get. </p>
+                                <div class="comment-list__reply">
+                                    <div class="vot-icon-wrap"> 
+                                        <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote" aria-describedby="tooltip94465">
+                                            <i class="fa-solid fa-arrow-up-long"></i>
+                                        </div>
+                                        <div class="vot-icon-wrap__item vot-count" class="vot-count">
+                                            <p>00</p>
+                                        </div>
+                                        <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                            <i class="fa-solid fa-arrow-down-long"></i>
+                                        </div>
+                                    </div>
+                                    <div class="comment-list__reply-text"> Reply <span class="comment-list__reply-icon"> <i class="fas fa-reply"></i></span></div>
+                                    <div class="comment-dropdown-wrap">
+                                        <button class="comment-list__reply-text comment-dropdown-icon"> <span class="comment-list__reply-icon"> <i class="fa-solid fa-ellipsis"></i></span></button>
+                                        <!-- dropdown-menu start -->
+                                        <ul class="comment-dropdown-menu">
+                                            <li class="comment-dropdown-menu__item">
+                                            <a class="menu-item edit" href="#">
+                                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                                            </a>
+                                            </li>
+                                            <li class="comment-dropdown-menu__item">
+                                                <button class="menu-item bookmark">
+                                                    <i class="fa-regular fa-trash-can"></i> <span>Delete</span>
+                                            </button>
+                                            </li>
+                                            <li class="comment-dropdown-menu__item">
+                                            <button class="menu-item report">
+                                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                                            </button>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown-menu end -->
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="comment-list style-right">
+                                <li class="comment-list__item d-flex flex-wrap">
+                                    <div class="comment-list__thumb">
+                                        <img src="assets/images/team/team-2.png" alt="">
+                                    </div>
+                                    <div class="comment-list__content">
+                                        <h4 class="comment-list__name">Esther Howard</h4>
+                                        <span class="comment-list__time"> <span class="comment-list__time-icon"><i class="far fa-clock"></i></span> 05 min ago </span>
+                                        <p class="comment-list__desc">"two, our service has been restored! Thanks for the frequent updates throughout the outage, and thank your crew for their hard work in restoring service." </p>
+                                        <div class="comment-list__reply">
+                                            <div class="vot-icon-wrap"> 
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote" aria-describedby="tooltip94465">
+                                                    <i class="fa-solid fa-arrow-up-long"></i>
+                                                </div>
+                                                <div class="vot-icon-wrap__item vot-count">
+                                                    <p>00</p>
+                                                </div>
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                                </div>
+                                            </div>
+                                            <div class="comment-list__reply-text"> Reply <span class="comment-list__reply-icon"> <i class="fas fa-reply"></i></span></div>
+                                            <div class="comment-dropdown-wrap">
+                                                <button class="comment-list__reply-text comment-dropdown-icon"> <span class="comment-list__reply-icon"> <i class="fa-solid fa-ellipsis"></i></span></button>
+                                                <!-- dropdown-menu start -->
+                                                <ul class="comment-dropdown-menu">
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <a class="menu-item edit" href="#">
+                                                        <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                        <button class="menu-item bookmark">
+                                                            <i class="fa-regular fa-trash-can"></i> <span>Delete</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <button class="menu-item report">
+                                                            <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                                                    </button>
+                                                    </li>
+                                                </ul>
+                                                <!-- dropdown-menu end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="comment-list style-right-three">
+                                <li class="comment-list__item d-flex flex-wrap">
+                                    <div class="comment-list__thumb">
+                                        <img src="assets/images/team/team-2.png" alt="">
+                                    </div>
+                                    <div class="comment-list__content">
+                                        <h4 class="comment-list__name">Esther Howard</h4>
+                                        <span class="comment-list__time"> <span class="comment-list__time-icon"><i class="far fa-clock"></i></span> 05 min ago </span>
+                                        <p class="comment-list__desc">"Thanks, our service has been restored! Thanks for the frequent updates throughout the outage, and thank your crew for their hard work in restoring service." </p>
+                                        <div class="comment-list__reply">
+                                            <div class="vot-icon-wrap"> 
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote" aria-describedby="tooltip94465">
+                                                    <i class="fa-solid fa-arrow-up-long"></i>
+                                                </div>
+                                                <div class="vot-icon-wrap__item vot-count">
+                                                    <p>00</p>
+                                                </div>
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                                </div>
+                                            </div>
+                                            <div class="comment-list__reply-text"> Reply <span class="comment-list__reply-icon"> <i class="fas fa-reply"></i></span></div>
+                                            <div class="comment-dropdown-wrap">
+                                                <button class="comment-list__reply-text comment-dropdown-icon"> <span class="comment-list__reply-icon"> <i class="fa-solid fa-ellipsis"></i></span></button>
+                                                <!-- dropdown-menu start -->
+                                                <ul class="comment-dropdown-menu">
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <a class="menu-item edit" href="#">
+                                                        <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                        <button class="menu-item bookmark">
+                                                            <i class="fa-regular fa-trash-can"></i> <span>Delete</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <button class="menu-item report">
+                                                            <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                                                    </button>
+                                                    </li>
+                                                </ul>
+                                                <!-- dropdown-menu end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="comment-list style-right-four">
+                                <li class="comment-list__item d-flex flex-wrap">
+                                    <div class="comment-list__thumb">
+                                        <img src="assets/images/team/team-2.png" alt="">
+                                    </div>
+                                    <div class="comment-list__content">
+                                        <h4 class="comment-list__name">Esther Howard</h4>
+                                        <span class="comment-list__time"> <span class="comment-list__time-icon"><i class="far fa-clock"></i></span> 05 min ago </span>
+                                        <p class="comment-list__desc">"Thanks, our service has been restored! Thanks for the frequent updates throughout the outage, and thank your crew for their hard work in restoring service." </p>
+                                        <div class="comment-list__reply">
+                                            <div class="vot-icon-wrap"> 
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote" aria-describedby="tooltip94465">
+                                                    <i class="fa-solid fa-arrow-up-long"></i>
+                                                </div>
+                                                <div class="vot-icon-wrap__item vot-count">
+                                                    <p>00</p>
+                                                </div>
+                                                <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                                    <i class="fa-solid fa-arrow-down-long"></i>
+                                                </div>
+                                            </div>
+                                            <div class="comment-list__reply-text"> Reply <span class="comment-list__reply-icon"> <i class="fas fa-reply"></i></span></div>
+                                            <div class="comment-dropdown-wrap">
+                                                <button class="comment-list__reply-text comment-dropdown-icon"> <span class="comment-list__reply-icon"> <i class="fa-solid fa-ellipsis"></i></span></button>
+                                                <!-- dropdown-menu start -->
+                                                <ul class="comment-dropdown-menu">
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <a class="menu-item edit" href="#">
+                                                        <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                                                    </a>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                        <button class="menu-item bookmark">
+                                                            <i class="fa-regular fa-trash-can"></i> <span>Delete</span>
+                                                    </button>
+                                                    </li>
+                                                    <li class="comment-dropdown-menu__item">
+                                                    <button class="menu-item report">
+                                                            <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                                                    </button>
+                                                    </li>
+                                                </ul>
+                                                <!-- dropdown-menu end -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="comment-list__item d-flex flex-wrap">
+                            <div class="comment-list__thumb">
+                                <img src="assets/images/team/team-3.png" alt="">
+                            </div>
+                            <div class="comment-list__content">
+                                <h4 class="comment-list__name">John Doe</h4>
+                                <span class="comment-list__time"> <span class="comment-list__time-icon"><i class="far fa-clock"></i></span> 05 min ago </span>
+                                <p class="comment-list__desc">"I had AT&amp;T DSL for many years; it was adequate for my use but too many disconnections, especially when I connected to my remote office computer. Switched over to Oasis last July.</p>
+                                <div class="comment-list__reply">
+                                    <div class="vot-icon-wrap"> 
+                                        <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Up Vote" aria-describedby="tooltip94465">
+                                            <i class="fa-solid fa-arrow-up-long"></i>
+                                        </div>
+                                        <div class="vot-icon-wrap__item vot-count">
+                                            <p>00</p>
+                                        </div>
+                                        <div class="vot-icon-wrap__item" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-original-title="Down Vote">
+                                            <i class="fa-solid fa-arrow-down-long"></i>
+                                        </div>
+                                    </div>
+                                    <div class="comment-list__reply-text"> Reply <span class="comment-list__reply-icon"> <i class="fas fa-reply"></i></span></div>
+                                    <div class="comment-dropdown-wrap">
+                                        <button class="comment-list__reply-text comment-dropdown-icon"> <span class="comment-list__reply-icon"> <i class="fa-solid fa-ellipsis"></i></span></button>
+                                        <!-- dropdown-menu start -->
+                                        <ul class="comment-dropdown-menu">
+                                            <li class="comment-dropdown-menu__item">
+                                            <a class="menu-item edit" href="#">
+                                                <i class="fa-solid fa-pen-to-square"></i>  <span>Edit</span>
+                                            </a>
+                                            </li>
+                                            <li class="comment-dropdown-menu__item">
+                                                <button class="menu-item bookmark">
+                                                    <i class="fa-regular fa-trash-can"></i> <span>Delete</span>
+                                            </button>
+                                            </li>
+                                            <li class="comment-dropdown-menu__item">
+                                            <button class="menu-item report">
+                                                    <i class="fa-regular fa-flag"></i>  <span>Report</span>
+                                            </button>
+                                            </li>
+                                        </ul>
+                                        <!-- dropdown-menu end -->
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <!-- comment reply end -->
+            </div>
+
+        </div>
+        <div class="col-xl-3 col-lg-3 d-lg-block d-none">
+            @@include('../partials/_sidebar-right.html')
+        </div>
+    </div>
+</div>
+
+@@include('../partials/_template-bottom.html')

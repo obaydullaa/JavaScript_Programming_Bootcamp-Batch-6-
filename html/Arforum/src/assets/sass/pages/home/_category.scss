@@ -1,0 +1,118 @@
+/*=========== Category ===========*/
+.category-area {
+    position: relative;
+    .category-bg {
+        position: absolute;
+        top: 0;
+        opacity: .08;
+    }
+}
+.category-box {
+    position: relative;
+    margin-top: 15px;
+    &:hover {
+        .title-two {
+            color: hsl(var(--base));
+        }
+    }
+    .link {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    }
+    &__thumb {
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: -6px;
+            background: hsl(var(--base));
+            width: 102%;
+            height: 102%;
+            z-index: -1;
+            border-radius: 50%;
+            @include sm-screen {
+                height: 104%;
+                width: 88%;
+            }
+            @include sm-screen {
+                width: 64%;
+            }
+        }
+        img {
+            animation: border-animation 5s linear infinite alternate;
+            border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+            transition: all .3s ease-out 0s;
+        }
+    }
+    &__count {
+        font-size: 30px;
+        color: transparent;
+        -webkit-text-stroke: 1px hsl(var(--black) / 0.5);
+        position: absolute;
+        top: 3px;
+        left: -8px;
+        z-index: 1;
+        font-weight: 600;
+        letter-spacing: -2px;
+        background: hsl(var(--base));
+        padding: 4px 10px;
+        border-radius: 50%;
+        border: 5px solid hsl(var(--white));
+    }
+    &__content {
+        margin-top: 20px;
+    }
+}
+
+@keyframes border-animation {
+    0% {
+        border-radius: 66% 49% 77% 23% / 55% 50% 50% 35%;
+    }
+    100% {
+        border-radius: 30% 70% 28% 72% / 53% 69% 41% 47%;
+    }
+}
+
+.category-box.donor {
+    position: relative;
+    .category-box__thumb {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        animation: border-animation 5s linear infinite alternate;
+        border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+        transition: all .3s ease-out 0s;
+        &::before {
+            content: "";
+            position: absolute;
+            left: -5px;
+            top: -6px;
+            background: hsl(var(--base));
+            width: 102%;
+            height: 102%;
+            z-index: -1;
+            border-radius: 50%;
+            @include sm-screen {
+                height: 104%;
+                width: 88%;
+            }
+            @include sm-screen {
+                width: 64%;
+            }
+        }
+    }
+    .category-box__content {
+        position: absolute;
+        top: 53px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+

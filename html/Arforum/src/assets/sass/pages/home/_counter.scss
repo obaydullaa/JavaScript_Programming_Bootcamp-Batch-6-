@@ -1,0 +1,87 @@
+/*=============== Experience =============*/
+.counter-wrapper {
+    padding: 80px 0px;
+    border-radius: 10px;
+    position: relative;
+    &::after {
+        position: absolute;
+        content: "";
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        background: hsl(var(--dark));
+        opacity: .92;
+        top: 0;
+        left: 0;
+    }
+    overflow: hidden;
+}
+.counter {
+    transition: all .4s ease-in-out;
+    text-align: center;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        left: 106%;
+        width: 1px;
+        background-color: hsl(var(--white)/0.07);
+        height: 100%;
+        background: hsl(var(--white)/.1);
+        @include md-screen {
+            display: none;
+        }
+    }
+    &__icon {
+        i {
+            color: hsl(var(--white));
+            font-size: 40px;
+            margin-bottom: 15px;
+            opacity: .5;
+        }
+        h3 {
+            position: relative;
+            margin: 0;
+            span {
+                font-size: 70px;
+                color: transparent;
+                -webkit-text-stroke: 0.09rem hsl(var(--base));
+                margin-top: 2px;
+                text-align: center;
+                border-radius: 50%;
+                transition: transform 0.5s ease;
+                font-weight: 700;
+                margin: auto;
+                @include lg-screen {
+                    font-size: 60px;
+                }
+            }
+            span.letter {
+                font-size: 21px;
+                margin-left: 5px;    
+                color: transparent;
+                position: absolute;
+                -webkit-text-stroke: 1px hsl(var(--base));
+                @include msm-screen {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    &__content  {
+        .title {
+            font-size: 35px;
+            font-weight: 800;
+            color: hsl(var(--white));
+            position: relative;
+            z-index: 1;
+            @include msm-screen {
+                font-size: 25px;
+            }
+        }
+    }
+}
+.col-lg-3:last-child .counter::after  {
+    display: none;
+}

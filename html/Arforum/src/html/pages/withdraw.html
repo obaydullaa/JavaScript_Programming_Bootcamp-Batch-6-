@@ -1,0 +1,62 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_dashboard_sidebar-menu.html')
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard-wrapper">
+    <div class="dashboard-container-wrapper">
+        <div class="container-fluid">
+
+            @@include('../partials/_dashboard-header.html')
+            <div class="dashboard-card-wrap mt-0">
+                <div class="row justify-content-center">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <div class="dashboard-card-wrap mt-0">
+                                <h4 class="title-three">Withdraw</h4>
+                                <div class="border-box user-profile">
+                                    <form action="#" method="POST">
+                                        <div class="row gy-3 justify-content-center">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label class="form--label mb-2">Select Gateway</label>
+                                                    <div class="col-sm-12">
+                                                        <select class="form--control form-select">
+                                                            <option value="volvo">Paypal</option>
+                                                            <option value="volvo">Strap</option>
+                                                            <option value="saab">Payoneer</option>
+                                                            <option value="saab">Bkash</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12">
+                                                <label class="form-label required" for="amount">Amount</label>
+                                                <div class="input-group country-code">
+                                                    <span class="input-group-text" id="basic-addon1">Usd</span>
+                                                    <input type="text" class="form--control" id="amount" placeholder="Enter Amount" aria-label="Username" aria-describedby="basic-addon1">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-12 text-end">
+                                                <button type="submit" class="btn btn--base">
+                                                    Submit
+                                                    <span></span>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div> 
+<!-- ==================== Dashboard End Here ==================== -->
+
+
+@@include('../partials/_template-bottom.html')

@@ -1,0 +1,103 @@
+<!-- meta tags and other links -->
+<!-- Header -->
+@@include('../partials/_template-top.html')
+
+@@include('../partials/_dashboard_sidebar-menu.html')
+
+<!-- ==================== Dashboard Start Here ==================== -->
+<div class="dashboard-wrapper">
+    <div class="dashboard-container-wrapper">
+        <div class="container-fluid">
+
+            @@include('../partials/_dashboard-header.html')
+
+            
+            <div class="dashboard-card-wrap"><div class="row justify-content-center">
+                <div class="col-md-12">
+                    <div class="text-end">
+                        <a href="new-ticket.html" class="btn btn-sm btn--base mb-2"> 
+                            <i class="fa fa-plus"></i> New Ticket
+                            <span></span>
+                        </a>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="table table--responsive--lg">
+                            <thead>
+                            <tr>
+                                <th>Subject</th>
+                                <th>Status</th>
+                                <th>Priority</th>
+                                <th>Last Reply</th>
+                                <th>Action</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Subject"> 
+                                        <a href="view-ticket.html" class="fw-bold"> [Ticket#12576092] Test My Website </a>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge badge--success">Open</span>                                                </td>
+                                    <td data-label="Priority">
+                                        <span class="badge bg-success">Medium</span>
+                                    </td>
+                                    <td data-label="Last Reply">1 month ago </td>
+
+                                    <td data-label="Action">
+                                        <a href="view-ticket.html" class="table-btn table-btn--violet">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Subject"> 
+                                        <a href="view-ticket.html" class="fw-bold"> [Ticket#434247] Design Issues </a>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge badge--success">Open</span>                                                </td>
+                                    <td data-label="Priority">
+                                        <span class="badge bg-primary">High</span>
+                                    </td>
+                                    <td data-label="Last Reply">1 month ago </td>
+
+                                    <td data-label="Action">
+                                        <a href="view-ticket.html" class="table-btn table-btn--violet">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Subject"> 
+                                        <a href="view-ticket.html" class="fw-bold"> [Ticket#413687] Hello </a>
+                                    </td>
+                                    <td data-label="Status">
+                                        <span class="badge badge--success">Open</span>                                                </td>
+                                    <td data-label="Priority">
+                                        <span class="badge bg-primary">High</span>
+                                    </td>
+                                    <td data-label="Last Reply">2 months ago </td>
+
+                                    <td data-label="Action">
+                                        <a href="view-ticket.html" class="table-btn table-btn--violet">
+                                            <i class="fa fa-eye"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="d-flex justify-content-end mt-4 mb-2">
+                        
+                    </div>
+    
+                </div>
+            </div>
+                    
+            </div> 
+        </div>
+    </div> 
+</div> 
+<!-- ==================== Dashboard End Here ==================== -->
+
+@@include('../partials/_template-bottom.html')

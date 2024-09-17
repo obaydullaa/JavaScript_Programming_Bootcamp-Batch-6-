@@ -1,0 +1,75 @@
+/*=================== Contact top Start =========*/
+.contact-item {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: 4px;
+    padding: 20px;
+    border: 2px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    display: flex;
+    margin-bottom: 15px;
+    @include sm-screen {
+        padding: 30px 15px;
+    }
+    @include xsm-screen {
+        flex-direction: column;
+    }
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+        .service {
+            &__icon {
+                i {
+                    transform: scale(1.1);
+                }
+                &::before {
+                    background: hsl(var(--base)/0.3);
+                }
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: 5px;
+        margin-right: 15px;
+        position: relative;
+        transition: all .6s ease-in-out;  
+        @include xsm-screen {
+            margin-bottom: 20px;
+        }
+        i {
+            font-size: 22px;
+            color: hsl(var(--black));
+            margin-top: 2px;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            background: hsl(var(--base));
+            line-height: 70px;
+            border-radius: 50%;
+        }
+    }
+    &__content  {
+        @include xsm-screen {
+            margin-left: 0;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include sm-screen {
+                font-size: 22px;
+            }
+        }
+        a {
+            transition: 0.5s;
+            font-size: 18px;
+            margin-top: 11px;
+        }
+    }
+}
+
+.map-wrapper iframe {
+    height: 500px;
+    width: 100%;
+    border-radius: 8px;
+}

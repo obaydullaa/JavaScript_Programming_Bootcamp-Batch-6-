@@ -1,0 +1,114 @@
+.service-details {
+    .service-details-wrapper {
+        .title-two {
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .step-content {
+            h3 {
+                font-weight: 500;
+            }
+        }
+    }
+    
+    .category-count {
+        width: 45px;
+        height: 45px;
+        background: hsl(var(--base)/.2);
+        text-align: center;
+        border-radius: 50%;
+        line-height: 50px;
+    }
+}
+
+.category-service {
+    background: hsl(var(--base));
+    border-radius: 8px;
+    padding: 25px 35px;
+    position: sticky;
+    top: 100px;
+    @include xl-screen {
+        padding: 25px 15px;
+    }
+    @include md-screen {
+        margin-top: 30px;
+        padding: 25px 35px;
+    }
+    .title-two {
+        transition: .3s all;
+        @include xl-screen {
+            font-size: 15px !important;
+        }
+        @include md-screen {
+            font-size: 20px !important;
+        }
+        @include sm-screen {
+            font-size: 15px !important;
+        }
+    }
+    .single-category {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        margin-bottom: 20px;
+        background: hsl(var(--white));
+        padding: 20px 0 15px 20px;
+        border-radius: 8px;
+        transition: .3s all;
+        &:hover {
+            .title-two {
+                color: hsl(var(--base));
+            }
+        }
+        @include lg-screen {
+            padding: 11px 0 8px 6px;
+            margin-bottom: 16px;
+        }
+        @include md-screen {
+            padding: 20px 0 15px 20px;
+            margin-bottom: 20px;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+    }
+    .categories-wrapper {
+        height: 480px;
+        overflow: hidden;
+        transition: .5s;
+        &.show-more {
+            height: 645px;
+            overflow: scroll;
+        }
+    } 
+    .show-more-btn {
+        color: hsl(var(--white));
+        cursor: pointer;
+        margin: auto;
+        display: table;
+        text-align: center;
+        span {
+            display: block;
+            color: hsl(var(--white));
+        }
+        i {
+            transition: .5s;
+        }
+        &.rotate-icon {
+            i {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.latest-blog {
+    .booking__bottom .selected-items {
+        width: 100%;
+    }
+    .service-category-menu {
+        padding: 0;
+        border: 0;
+        height: inherit;
+    }
+}

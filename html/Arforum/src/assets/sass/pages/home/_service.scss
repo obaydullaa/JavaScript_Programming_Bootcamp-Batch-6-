@@ -1,0 +1,103 @@
+/*============ How it works ============*/
+
+.service-bg-img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .1;
+}
+.service-item {
+    box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    border-radius: var(--border-radius);
+    padding: 30px;
+    border: 2px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    text-align: start;
+    position: relative;
+    position: relative;
+    overflow: hidden;
+    @include sm-screen {
+        padding: 30px 15px;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -105px;
+        right: -130px;
+        width: 50%;
+        height: 100%;
+        background: linear-gradient(43.32deg, hsl(var(--base) / 0.1) 86.35%, hsl(var(--base) / 0.5) 86.35%);
+        transform: rotate(159deg);
+        border-radius: 10px;
+        transition: all 0.4s ease-in-out;
+        filter: blur(83px);
+        border-radius: 10%;
+    }
+    img.service-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: .14;
+        height: 85%;
+        width: 100%;
+    }
+    @include xsm-screen {
+        flex-direction: column;
+    }
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(1, 6, 20, 0.1);
+        border: 2px solid hsl(var(--base)/.4);
+        transform: translateY(-3px);
+        .service {
+            &__icon {
+                i {
+                    transform: scale(1.1);
+                }
+                &::before {
+                    background: hsl(var(--base)/0.3);
+                }
+            }
+        }
+    }
+    &__icon {
+        margin-bottom: 20px;
+        position: relative;
+        transition: all .6s ease-in-out;  
+        i {
+            font-size: 27px;
+            color: hsl(var(--base));
+            margin-top: 2px;
+            height: 70px;
+            width: 70px;
+            text-align: center;
+            background: hsl(var(--white));
+            line-height: 70px;
+            border-radius: 50%;
+            transition: transform 0.5s ease;
+            box-shadow: 0px -1px 16px 0px hsl(var(--base)/0.3);
+        }
+    }
+    &__content  {
+        @include xsm-screen {
+            margin-left: 0;
+        }
+        h3 {
+            font-size: 30px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            @include sm-screen {
+                font-size: 22px;
+            }
+        }
+        a {
+            font-weight: 700;
+            transition: 0.5s;
+            font-size: 18px;
+            margin-top: 11px;
+        }
+    }
+}

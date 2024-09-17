@@ -1,0 +1,123 @@
+/*============= Download App Here =============*/
+
+.download-app {
+    background-size: cover; 
+    background-repeat: no-repeat;
+    .section-title-two {
+        text-align: left;
+        .title-one{
+            font-size: 30px;
+        }
+        p {
+            font-size: 15px;
+        }
+        @include msm-screen {
+            text-align: center !important;
+            margin-top: 70px !important;
+        }
+    }
+    h2 {
+        @include sm-screen {
+            font-size: 25px;
+        }
+    }
+    &__img {
+        position: relative;
+        @include sm-screen {
+            margin-bottom: 50px;
+            text-align: center ;
+        }
+        &::before {
+            content: "";
+            width: 400px;
+            height: 400px;
+            background: hsl(var(--base)/.1);
+            position: absolute;
+            z-index: -1;
+            border-radius: 50%;
+            top: 30px;
+            left: -70px;
+            animation: zoomInOut 3s infinite; 
+            animation-timing-function: ease-in-out;
+            @include sm-screen {
+                left: 40px;
+            }
+        }
+        .shapes {
+            img {
+                position: absolute;
+                z-index: 2;
+                @include md-screen {
+                    display: none;
+                }
+                @include sm-screen {
+                    display: block;
+                }
+                @include xsm-screen {
+                    display: none;
+                }
+            }
+            .play-store {
+                left: -5%;
+                top: 15%;
+                @include sm-screen {
+                    left: 18%;
+                }
+                @include msm-screen {
+                    left: 7%;
+                }
+            }
+            .app-store {
+                left: 44%;
+                top: 65%;
+                @include lg-screen {
+                    left: 63%;
+                }
+                @include sm-screen {
+                    left: 70%;
+                }
+                @include msm-screen {
+                    left: 75%;
+                }
+            }
+        }
+    }
+    .app-play-store {
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        @include msm-screen {
+            justify-content: center ;
+        }
+        .store-btn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: hsl(var(--black));
+            color: hsl(var(--white));
+            width: 170px;
+            height: 70px;
+            padding: 0 12px;
+            border-radius: 4px;
+            @include xxsm-screen {
+                margin-right: 5px;
+            }
+            .btn-content {
+                span {
+                    font-size: 12px;
+                    @include xxsm-screen {
+                        font-size: 9px;
+                    }
+                }
+                h3 {
+                    color: hsl(var(--white));
+                    @include xxsm-screen {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+

@@ -1,0 +1,168 @@
+/*============= About =============*/
+.about-section {
+    position: relative;
+}
+.about-shape-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+.top-right-shape-img {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    opacity: .02;
+    width: 250px;
+    @include sm-screen {
+        width: 180px;
+    }
+}
+.about-item-thumb {
+    position: relative;
+    @include lg-screen {
+        margin-right: 20px;
+    }
+    @include md-screen {
+        margin-right: 0px;
+    }
+    &__inner {
+        position: relative;
+        img {
+            border-radius: 6px;
+            display: block; 
+        }
+        .content {
+            position: absolute;
+            background: hsl(var(--base));
+            border-radius: 12px;
+            bottom: 0;
+            padding: 0px;
+            .count {
+                padding: 23px;
+                text-align: center;
+                width: 280px;
+                i {
+                    font-size: 50px;
+                    border-radius: 12px;
+                    color: hsl(var(--white));
+                    margin-bottom: 15px;
+                }
+                .title-one {
+                    color: hsl(var(--white));
+                }
+                .happy-cus {
+                    font-size: 24px;
+                    color: hsl(var(--white));
+                    text-align: center;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+.about-item-thumb {
+    .about-border {
+        width: 530px;
+        height: 480px;
+        position: absolute;
+        top: 0px;
+        right: 55px;
+        border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+        background: hsl(var(--black)/0.02);
+        animation: border-animation 5s linear infinite alternate;
+        border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+        transition: all .3s ease-out 0s;
+        @include md-screen {
+            width: 330px;
+            height: 380px;
+        }
+        @include msm-screen {
+            display: none;
+        }
+    }
+    .about-border-right {
+        position: absolute;
+        height: 110%;
+        width: 20px;
+        background: hsl(var(--base));
+        right: 102px;
+        top: -48px;
+        border-radius: 3px;
+        @include xl-screen {
+            right: 15px;
+        }
+        @include lg-screen {
+            right: -10px;
+        }
+    }
+    .video-button-wrap {    
+        position: absolute;
+        left: 76%;
+        top: 100%;
+        z-index: -1;
+        .popup-vide-wrap {
+            text-align: center;
+            .waves {
+                width: 630px;
+                height: 630px;
+                background: hsl(var(--base) / 0.5);
+                opacity: 0;
+                border-radius: 50%;
+            }
+        }
+        .popup_video {
+            position: absolute;
+            left: -21px;
+            z-index: 4;
+            top: -16px;
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
+            background: hsl(var(--white));
+            border-radius: 50%;
+        }
+    }
+}
+
+@keyframes border-animation {
+    0% {
+        border-radius: 66% 49% 77% 23% / 55% 50% 50% 35%;
+    }
+    100% {
+        border-radius: 30% 70% 28% 72% / 53% 69% 41% 47%;
+    }
+}
+
+.about-item-right-content {
+    @include md-screen {
+        margin-bottom: 30px;
+    }
+    .about-item-middle {
+        padding-bottom: 20px;
+        margin-bottom: 35px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        border-bottom: 2px dashed hsl(var(--base));
+        &__item {
+            display: flex;
+            width: 50%;
+            @include msm-screen {
+                width: 100%;
+            }
+            .icon  {
+                margin-right: 12px;
+                font-size: 17px;
+                color: hsl(var(--base));
+                align-self: start;
+            }
+            .content .title-three {
+                font-size: 18px;
+            }
+        }
+    }
+}

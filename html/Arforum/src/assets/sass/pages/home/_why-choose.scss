@@ -1,0 +1,152 @@
+/*====================== Why choose ====================*/
+.why-choose-area {
+    position: relative;
+    .why-choose-bg {
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        border: 40px solid hsl(var(--base)/.08);
+        right: 30%;
+        top: 13%;
+        border-radius: 50%;
+        @include md-screen {
+            border: 30px solid hsl(var(--base) / 0.4);
+            top: 50%;
+            left: 25%;
+        }
+        @include sm-screen {
+            top: 60%;
+        }
+        @include msm-screen {
+            top: 65%;
+            left: 10%
+        }
+        @include xsm-screen {
+           display: none;
+        }
+    }
+}
+.why-choose-border {
+    width: 330px;
+    height: 480px;
+    position: absolute;
+    top: 20%;
+    left: -11%;
+    border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+    background: hsl(var(--black)/0.02);
+    animation: border-animation 5s linear infinite alternate;
+    border-radius: 100% 41% 50% 21% / 74% 57% 70% 50%;
+    transition: all 0.3s ease-out 0s;
+    z-index: -1;
+}
+
+
+.why-choose-us {
+    &__thumb {
+        .img-1 {
+            border-radius: var(--border-radius);
+        }
+        position: relative;
+        .popup-vide-wrap {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            .play-video {
+                height: 80px;
+                width: 80px;
+                line-height: 84px;
+                display: inline-block;
+                border-radius: 50%;
+                position: relative;
+                z-index: 3;
+                text-align: center;
+            }
+            .waves {
+                position: absolute;
+                width: 150px;
+                height: 150px;
+                background: hsl(var(--base)/0.7);
+                opacity: 0;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                border-radius: 50%;
+                right: -34px;
+                bottom: -35px;
+                z-index: 1;
+                -webkit-animation: waves 9s ease-in-out infinite;
+                animation: waves 9s ease-in-out infinite;
+            }
+            
+            .wave-1 {
+                -webkit-animation-delay: 0s;
+                animation-delay: 0s;
+            }
+            
+            .wave-2 {
+                -webkit-animation-delay: 3s;
+                animation-delay: 3s;
+            }
+            
+            .wave-3 {
+                -webkit-animation-delay: 7s;
+                animation-delay: 7s;
+            }
+        }
+    }
+    &__content {
+        margin-bottom: 20px;
+        @include md-screen {
+            padding-left: 0;
+        }
+       h3 {
+        font-size: 28px;
+        font-weight: 600; 
+        @include msm-screen {
+            font-size: 22px;
+        }
+       }
+    }
+    &__topic {
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        @include md-screen {
+            width: 80%;
+        }
+        @include xsm-screen {
+            width: 100%;
+        }
+       .item {
+            margin-bottom: 25px;
+            display: flex;
+            @include msm-screen {
+                flex-wrap: wrap;
+            }
+            &:last-child .content {
+                border-bottom: 0;
+            }
+            i {
+                color: hsl(var(--base));
+                font-size: 24px;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                line-height: 50px;
+                text-align: center;
+                background: hsl(var(--base)/.2);
+                margin-bottom: 15px;
+            }
+            .content {
+                width: calc(100% - 50px);
+                width: calc(100% - 50px);
+                padding-bottom: 15px;
+                border-bottom: 2px dashed hsl(var(--black)/.1);
+                margin-left: 15px;
+                @include msm-screen {
+                    width: 100%;
+                    margin-left: 0;
+                }
+            }
+       }
+    }
+}

@@ -1,0 +1,95 @@
+/*====================== Quality Hostel ====================*/
+.quality-hostel-section {
+    margin-bottom: 180px;
+    @include xl-screen {
+        margin-bottom: 120px;
+    }
+    @include md-screen {
+        margin-bottom: 180px;
+    }
+    @include msm-screen {
+        margin-bottom: 160px;
+    }
+}
+.quality-hostel-thumb {
+    &__inner {
+        position: relative;
+        .content {
+            position: absolute;
+            background: hsl(var(--base));
+            border-radius: 12px;
+            bottom: -115px;
+            padding: 0px;
+            .icon {
+                i {
+                    font-size: 50px;
+                    background: hsl(var(--white));
+                    padding: 44px 40px;
+                    border-radius: 12px;
+                    margin-right: -159px;
+                    margin-top: -66px;
+                    color: hsl(var(--base));
+                }
+            }
+            .count {
+                padding: 23px;
+                text-align: center;
+                .title-one {
+                    color: hsl(var(--white));
+                }
+                .happy-cus {
+                    font-size: 24px;
+                    color: hsl(var(--white));
+                    text-align: center;
+                    display: block;
+                    width: 90%;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+}
+
+.quality-hostel-middle {
+    margin-bottom: 47px;
+    margin-top: 44px;
+    &__item {
+        .icon  {
+            margin-bottom: 20px;
+            i {
+                height: 64px;
+                width: 64px;
+                line-height: 64px;
+                text-align: center;
+                border-radius: 100%;
+                background: hsl(var(--base));
+                color: hsl(var(--white));
+                font-size: 22px;
+            }
+        }
+    }
+}
+.quality-hostel-bottom {
+    border: 1px solid hsl(var(--black)/.1);
+    border-radius: 12px;
+    padding: 30px;
+    &__item {
+        display: flex;
+        .thumb {
+            height: 68px;
+            width: 68px;
+            margin-right: 15px;
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+        .content {
+            width: calc(100% - 68px);
+            .title-three {
+                margin-bottom: 3px;
+            }
+        }
+    }
+}

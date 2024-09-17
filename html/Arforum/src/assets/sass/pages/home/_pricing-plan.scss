@@ -1,0 +1,134 @@
+/*====================== Offer ====================*/
+
+// .all-price-wrapper {
+//     display: flex;
+//     border-radius: var(--border-radius);
+//     overflow: hidden;
+//     background: linear-gradient(359deg, rgba(255, 255, 255, 0) 0%, hsl(var(--base)/.05) 100%);
+//     flex-wrap: wrap;
+// }
+.pricing-header-wrap {
+    display: flex;
+    justify-content: space-between;
+    background: hsl(var(--base)/.1);
+    text-align: center;
+}
+.all-price-wrapper .single-price-wrap {
+    // width: 33.33%;
+}
+.pricing-plan-item {
+    // box-shadow: 0px 15px 30px rgb(61 90 125 / 8%);
+    // border-radius: var(--border-radius);
+    padding: 0px 11px 0px;
+    // border: 1px solid hsl(var(--base)/.07);
+    transition: all .4s ease-in-out;
+    position: relative;
+    // }
+
+    .pricing-plan-item {
+        &__top {
+            width: 33.33%;
+            border-right: 1px solid hsl(var(--black)/.1);
+            padding: 10px 0;
+            &:last-child {
+                border-right: 0;
+            }
+            .title {
+                font-size: 18px;
+                font-weight:  600;
+                margin-bottom: 0px;
+                @include msm-screen {
+                    font-size: 16px;
+                }
+            }
+        }
+        &__price {
+            .title {
+                font-weight: 600;
+                font-size: 35px;
+                margin-bottom: 20px;
+                span {
+                    font-size: 16px;
+                    color: hsl(var(--black)/.5);
+                }
+            }
+        }
+        &__list {
+            .price-list-item-wrapper {
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                border-bottom: 1px solid hsl(var(--black)/.08);
+                .price-list-item {
+                    width: 33.33%;
+                    padding: 5px 0;
+                    border-right: 1px solid hsl(var(--black)/.1);
+                    p {
+                        @include msm-screen {
+                            font-size: 15px;
+                        }
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                    i {
+                        color: hsl(var(--base));
+                    }
+                    i.fa-minus {
+                        color: hsl(var(--black)/.1);
+                    }
+                }
+                
+                &.bottom .price-list-item {
+                    border-right: 1px solid hsl(var(--black)/.1);
+                    padding: 20px 0;
+                    .btn {
+                        @include msm-screen {
+                            padding: 5px 5px;
+                            font-size: 15px;
+                        }
+                        @include xsm-screen {
+                            padding: 5px 5px;
+                            font-size: 14px;
+                        }
+                    }
+                    &:last-child {
+                        border-right: 0;
+                    }
+                } 
+            }
+            ul {
+                li {
+                    // border-bottom: 1px solid hsl(var(--black) /.1);
+                    padding-bottom: 8px;
+                    margin-bottom: 10px;
+                    font-size: 15px;
+                    display: flex;
+                    i {
+                        color: hsl(var(--base));
+                        margin-right: 10px;
+                        margin-top: 3px;
+                    }
+                }
+            }
+        }
+        &__bottom {
+            a {
+                font-size: 20px;
+                font-weight: 700;
+            }
+            
+        }
+        
+    }
+}
+
+.pricing-plan-item .pricing-plan-item__list .row:last-child .price-list-item-wrapper {
+    border-bottom: 0;
+}
+.all-price-wrapper {
+    border: 1px solid hsl(var(--black)/.1);
+}
+// .price-list-item-wrapper.bottom .price-list-item {
+//     border-right: 1px solid hsl(var(--black)/.1);
+// }

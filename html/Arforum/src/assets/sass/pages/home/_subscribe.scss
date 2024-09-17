@@ -1,0 +1,66 @@
+/*============= Breaking News =============*/
+.subscribe-wrap {
+    padding: 30px 70px 30px;
+    // border: 1px solid hsl(var(--base)/.2);
+    border-radius: 0px;
+    @include sm-screen {
+        padding: 40px;
+    }
+    @include xxsm-screen {
+        padding: 20px;
+    }
+    .section-heading__title {
+        @include md-screen {
+            font-size: 34px;
+        }
+        @include sm-screen {
+            font-size: 27px;
+        }
+        @include xsm-screen {
+            font-size: 22px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+    }
+    &__input {
+        position: relative;
+        input {
+            height: 60px;
+            border-radius: 10px;
+            background-color:hsl(var(--base)/0.05);
+            padding-right: 70px;
+        }
+        button {
+            position: absolute;
+            height: 100%;
+            width: 62px;
+            background-color: hsl(var(--base));
+            border-radius: 0px 0px 0px 0;
+            right: 0;
+            border-radius: 0px 10px 10px 0px;    
+        }
+    }
+}
+
+.subscribe-right {
+    position: relative;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        border-radius: var(--border-radius);
+        left: 0px;
+        bottom: 0px;
+        transition: all 0.3s ease-in-out;
+        z-index: 1;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(var(--base)) 100%);
+    }
+    .thumb{
+        img {
+            // background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, hsl(var(--base)/0.2) 100%);
+        }
+    }
+
+}
